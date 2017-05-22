@@ -27,6 +27,7 @@ public partial class _Default : System.Web.UI.Page
             if(val.Equals("}"))
             {
                 ClientScript.RegisterStartupScript(Page.GetType(), "Message", "alert('" + "No se encuentra el Paciente. Favor intente de nuevo" + "');", true);
+                buscar.Text = string.Empty;
                 txtNombre.Text = string.Empty;
                 txtRut.Text = string.Empty;
                 txtEdad.Text = string.Empty;
@@ -39,7 +40,7 @@ public partial class _Default : System.Web.UI.Page
                 if (rut.Equals(txtRut.Text))
                 {
                     txtNombre.Text = pac.Nombres + " " + pac.ApellidoPat + " " + pac.ApellidoMat;
-                    txtRut.Text = pac.Rut_Paciente;
+                    txtRut.Text = pac.Rut_Paciente.ToString();
                     txtEdad.Text = pac.Celular.ToString();
                 }
                 else
