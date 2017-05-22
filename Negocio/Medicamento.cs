@@ -8,11 +8,11 @@ namespace Negocio
 {
     public class Medicamento
     {
-        private string Nombre { get; set; }
-        private int Cantidad { get; set; }
-        private string UnidadMedida { get; set; }
-        private int Stock { get; set; }
-        private int StockCritico { get; set; }
+        public string Nombre { get; set; }
+        public int Cantidad { get; set; }
+        public string UnidadMedida { get; set; }
+        public int Stock { get; set; }
+        public int StockCritico { get; set; }
 
         public Medicamento()
         {

@@ -8,13 +8,13 @@ namespace Negocio
 {
     public class Formulario
     {
-        private int Codigo { get; set; }
-        private DateTime FechaIngreso { get; set; }
-        private Medico medico { get; set; }
-        private Paciente paciente { get; set; }
-        private Medicamento medicam { get; set; }
-        private Prescripcion presc { get; set; }
-        private bool Control { get; set; }
+        public int Codigo { get; set; }
+        public DateTime FechaIngreso { get; set; }
+        public Medico medico { get; set; }
+        public Paciente paciente { get; set; }
+        public Medicamento medicam { get; set; }
+        public Prescripcion presc { get; set; }
+        public bool Control { get; set; }
 
         public Formulario()
         {

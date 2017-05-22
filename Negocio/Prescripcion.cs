@@ -8,9 +8,9 @@ namespace Negocio
 {
     public class Prescripcion
     {
-        private int Cantidad { get; set; }
-        private int Horas { get; set; }
-        private int Dias { get; set; }
+        public int Cantidad { get; set; }
+        public int Horas { get; set; }
+        public int Dias { get; set; }
 
         public Prescripcion()
         {
