@@ -45,7 +45,7 @@ public partial class _Default : System.Web.UI.Page
                 }
                 else
                 {
-                    ClientScript.RegisterStartupScript(Page.GetType(), "Message", "alert('" + "No se encuentra el Paciente. Favor intente de nuevo" + "');", true);
+                    ClientScript.RegisterStartupScript(Page.GetType(), "Message", "alert('" + " No se encuentra el Paciente. Favor intente de nuevo" + "');", true);
                     txtNombre.Text = string.Empty;
                     txtRut.Text = string.Empty;
                     txtEdad.Text = string.Empty;
