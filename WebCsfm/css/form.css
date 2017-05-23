@@ -6,6 +6,10 @@
     text-align: center;
 }
 
+#titulo{
+    margin-top: -1em;
+}
+
 #txtCod{
     padding-right: 3em;
     text-align: center;
@@ -112,4 +116,22 @@ fieldset{
 
 #Label4, #Label5, #Label6, #Label7{
     margin-left:15px;
+}
+
+#btnSalir{
+    color: red;
+    border: 0px;
+    background: unset;
+    font-family: Tahoma;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+#lbSalida{
+   position: absolute;
+   right: 0;
+   padding-right: 1em;
+   color: red;
+   font-weight: 900;
+   text-decoration:underline;
 }

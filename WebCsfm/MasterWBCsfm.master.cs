@@ -15,15 +15,25 @@ public partial class MasterWBCsfm : System.Web.UI.MasterPage
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        if(Session != null)
+        try
         {
-            lblBienv.Text = "Bienvenido " + Session["nobMedico"].ToString();
+            if (Session["nombMed"].ToString().Equals(" "))
+            {
+                Session.Abandon();
+                Response.Redirect("./Login.aspx");
+            }
+            else
+            {
+                string ssNomb = Session["nombMed"].ToString() + " " + Session["apPatMed"].ToString();
+                lblBienv.Text = "Bienvenido " + ssNomb;
+            }
+            
         }
-        else
+        catch (NullReferenceException ae)
         {
-            Session.RemoveAll();
-            Server.Transfer("./Login.aspx", true);
+            throw new NullReferenceException("Error: ", ae);
         }
+
     }
 
     protected void salir_Click(object sender, EventArgs e)

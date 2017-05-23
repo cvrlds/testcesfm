@@ -41,9 +41,9 @@
             <PathSeparatorStyle Font-Bold="True" ForeColor="#990000" />
             <RootNodeStyle Font-Bold="True" ForeColor="#FF8000" />
         </asp:SiteMapPath>
-        <asp:Label ID="lblBienv" runat="server" Font-Bold="True" Font-Names="Tahoma" ForeColor="Black" ToolTip="Hola!">Bienvenido (Usuario)</asp:Label>
-        <asp:Panel ID="Panel1" runat="server">
-            <a href="Login.aspx" ><asp:Label ID="lbSalida" runat="server" Text="Label"><i class="salida glyphicon glyphicon-log-out"></i> Salir</asp:Label></a>
+        <asp:Label ID="lblBienv" runat="server" Font-Bold="True" Font-Names="Tahoma" ForeColor="Black" ToolTip="Hola!">Bienvenido</asp:Label>
+        <asp:Panel ID="lbSalida" runat="server">
+            <span class="glyphicon glyphicon-log-out"><input id="btnSalir" type="button" runat="server" value="Salir" onserverclick="btnSalir_ServerClick"/></span>
         </asp:Panel>
     </div>
 

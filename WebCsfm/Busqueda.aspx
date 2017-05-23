@@ -45,13 +45,14 @@
             <span id="tx" class="label-info input-group-addon">Rut</span>
             <asp:TextBox type="text" class="form-control" ID="txtRut" disabled runat="server"></asp:TextBox>
         </div>
+        <asp:Label id="test" runat="server"></asp:Label>
         <div id="pnlEdad" class="input-group">
             <span id="tx" class="label-info input-group-addon">Telefono</span>
             <asp:TextBox type="text" class="form-control" id="txtFono" disabled runat="server"></asp:TextBox>
         </div>
     </fieldset>
     <div id="fldBtnForm">
-        <asp:Button id="btnForm" class="btn btn-success" runat="server" Text="Form Medicamentos" OnClick="btnForm_Click"></asp:Button>
+        <asp:Button id="btnForm" class="btn btn-success" runat="server" Text="Formulario Medicamentos" OnClick="btnForm_Click"></asp:Button>
     </div>
 </asp:Content>
 

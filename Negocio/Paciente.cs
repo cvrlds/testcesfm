@@ -31,9 +31,25 @@ namespace Negocio
             this.ApellidoMat = string.Empty;
             this.Sector = string.Empty;
             this.Direccion = string.Empty;
-            this.Celular = 0; ;
+            this.Celular = 0;
             this.RedFija = 0;
             this.RutTutor = string.Empty;
+        }
+
+        public void vaciaPaciente()
+        {
+            if(Rut != string.Empty)
+            {
+                Rut = string.Empty;
+                Nombres = string.Empty;
+                ApellidoPat = string.Empty;
+                ApellidoMat = string.Empty;
+                Sector = string.Empty;
+                Direccion = string.Empty;
+                Celular = 0;
+                RedFija = 0;
+                RutTutor = string.Empty;
+            }
         }
     }
 }

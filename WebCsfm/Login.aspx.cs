@@ -44,8 +44,9 @@ public partial class Login : System.Web.UI.Page
                 {
                     if (pass.Equals(txPass))
                     {
-                        Session["nobMedico"] = nomb;
-                        Session["rutMedico"] = rut;
+                        Session["nombMed"] = med.Nombres;
+                        Session["apPatMed"] = med.ApellidoPat;
+                        Session["rutMed"] = med.RutUser;
                         Server.Transfer("./Busqueda.aspx", true);
                     }
                     else

@@ -16,11 +16,7 @@ public partial class _Default : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
-       if(Session["nobMedico"].ToString().Equals(" "))
-        {
-            Session.RemoveAll();
-            Server.Transfer("./Login.aspx", true);
-        }
+        
     }
 
     protected void buscar_Click(object sender, EventArgs e)
@@ -48,6 +44,11 @@ public partial class _Default : System.Web.UI.Page
                     txtNombre.Text = pac.Nombres + " " + pac.ApellidoPat + " " + pac.ApellidoMat;
                     txtRut.Text = rut;
                     txtFono.Text = pac.Celular.ToString();
+                    Session["rutPac"] = pac.Rut;
+                    Session["nombPac"] = pac.Nombres;
+                    Session["apPatPac"] = pac.ApellidoPat;
+                    Session["apMatPac"] = pac.ApellidoMat;
+
                     txBusq.Text = string.Empty;
                 }
                 else
@@ -65,15 +66,23 @@ public partial class _Default : System.Web.UI.Page
 
     protected void btnForm_Click(object sender, EventArgs e)
     {
-        if (pac.Rut.Equals(" "))
+        try
         {
-            ClientScript.RegisterStartupScript(Page.GetType(), "Message", "alert('" + "Favor ingrese un Paciente." + "');", true);
+            string ssRut = Session["rutPac"].ToString();
+
+            if (ssRut == " ")
+            {
+                ClientScript.RegisterStartupScript(Page.GetType(), "Message", "alert('" + "Favor ingrese un Paciente." + "');", true);
+            }
+            else
+            {
+                test.Text = " ";
+                //test.Text = Session["rutPac"].ToString();
+                Response.Redirect("./FormularioMed.aspx");
+            }
         }
-        else
+        catch (NullReferenceException ex)
         {
-            Session["rutPac"] = pac.Rut;
-            Session["nombPac"] = pac.Nombres;
-            Response.Redirect("./FormularioMed.aspx");
-        }       
+        }
     }
 }
