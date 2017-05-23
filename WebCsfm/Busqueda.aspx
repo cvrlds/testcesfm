@@ -32,6 +32,7 @@
             <span id="tx" class="label-info input-group-addon">Edad</span>
             <asp:TextBox type="text" class="form-control" id="txtEdad" disabled runat="server"></asp:TextBox>
         </div>
+        <asp:Label ID="test" runat="server"></asp:Label>
     </fieldset>
     <div id="fldBtnForm">
         <a id="btnForm" href="FormularioMed.aspx" class="btn btn-success">Formulario Medicamentos  <span class="glyphicon glyphicon-plus"></span></a>

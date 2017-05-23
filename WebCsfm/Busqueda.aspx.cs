@@ -22,6 +22,7 @@ public partial class _Default : System.Web.UI.Page
     {
         string val = wsCSFM.getPacienteRut(buscar.Text).Replace(@"\", "").Replace(@"[", "").Replace(@"]", "").Replace("}}", "}");
         val = val.Substring(val.IndexOf(':') + 1);
+        test.Text = val;
         try
         {
             if(val.Equals("}"))
@@ -35,12 +36,12 @@ public partial class _Default : System.Web.UI.Page
             else
             {
                 Paciente pac = JsonConvert.DeserializeObject<Paciente>(val);
-                string rut = pac.Rut_Paciente;
+                string rut = pac.Rut;
 
-                if (rut.Equals(txtRut.Text))
+                if (rut.Equals(buscar.Text))
                 {
                     txtNombre.Text = pac.Nombres + " " + pac.ApellidoPat + " " + pac.ApellidoMat;
-                    txtRut.Text = pac.Rut_Paciente.ToString();
+                    txtRut.Text = rut;
                     txtEdad.Text = pac.Celular.ToString();
                 }
                 else

@@ -8,7 +8,7 @@ namespace Negocio
 {
     public class Paciente
     {
-        public string Rut_Paciente { get; set; }
+        public string Rut { get; set; }
         public string Nombres { get; set; }
         public string ApellidoPat { get; set; }
         public string ApellidoMat { get; set; }
@@ -25,7 +25,7 @@ namespace Negocio
 
         private void Init()
         {
-            this.Rut_Paciente = string.Empty;
+            this.Rut = string.Empty;
             this.Nombres = string.Empty;
             this.ApellidoPat = string.Empty;
             this.ApellidoMat = string.Empty;
