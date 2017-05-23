@@ -43,7 +43,7 @@
         </asp:SiteMapPath>
         <asp:Label ID="lblBienv" runat="server" Font-Bold="True" Font-Names="Tahoma" ForeColor="Black" ToolTip="Hola!">Bienvenido (Usuario)</asp:Label>
         <asp:Panel ID="Panel1" runat="server">
-            <a href="Login.aspx" ><asp:Label   ID="lbSalida" runat="server" Text="Label"><i class="salida glyphicon glyphicon-log-out"></i> Salir</asp:Label></a>
+            <a href="Login.aspx" ><asp:Label ID="lbSalida" runat="server" Text="Label"><i class="salida glyphicon glyphicon-log-out"></i> Salir</asp:Label></a>
         </asp:Panel>
     </div>
 
@@ -53,8 +53,6 @@
     <form id="form1" runat="server">
         <div class="inline">
             <div id="pnlInp" class="input-group">
-                <span id="tx" class="label-info input-group-addon">Código</span>
-                <asp:TextBox  type="text" class="form-control" id="txtCod" disabled runat="server"></asp:TextBox>
                 <span id="tx" class="label-info input-group-addon">Paciente</span>
                 <asp:TextBox type="text" class="form-control" id="txtPac" disabled runat="server"></asp:TextBox>
                 <span id="tx" class="label-info input-group-addon">Fecha</span>

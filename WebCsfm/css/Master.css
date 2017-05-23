@@ -33,9 +33,18 @@ img{
    position: absolute;
    right: 0;
    padding-right: 2em;
-   color: cornflowerblue;
+   color: red;
    font-weight: 900;
    text-decoration:underline;
+}
+
+#btnSalir{
+    color: red;
+    border: 0px;
+    background: unset;
+    font-family: Tahoma;
+    font-weight: 600;
+    font-size: 15px;
 }
 
 #txtRut{

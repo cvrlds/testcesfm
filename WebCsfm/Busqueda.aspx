@@ -7,6 +7,23 @@
     <link href="css/general.css" rel="stylesheet"/>
 
 
+    <style type="text/css">
+        .auto-style2 {
+            position: relative;
+            display: table;
+            border-collapse: separate;
+            left: 0px;
+            top: -6px;
+            height: 33px;
+            width: 187px;
+        }
+        .auto-style3 {
+            left: 0px;
+            top: 1px;
+        }
+    </style>
+
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div>
@@ -14,9 +31,9 @@
     </div>
     <fieldset>
         <div class="inline">
-            <div id="busq" class="input-group">
-                <asp:TextBox ID="buscar" type="text" class="form-control" text="Ingresar Rut" autofocus="autofocus" runat="server"></asp:TextBox>
-                <asp:Button class="label-info input-group-addon glyphicon glyphicon-search" OnClick="buscar_Click" runat="server"></asp:Button>
+            <div id="busq" class="auto-style2">
+                <asp:TextBox id="txBusq" class="form-control" placeholder="Rut" autofocus="autofocus" runat="server" Width="200px" MaxLength="10"></asp:TextBox>
+                <asp:Button id="btnBusq" OnClick="buscar_Click" class="btn btn-info" Text="Buscar" runat="server" ></asp:Button>
             </div>
         </div>
         
@@ -29,13 +46,12 @@
             <asp:TextBox type="text" class="form-control" ID="txtRut" disabled runat="server"></asp:TextBox>
         </div>
         <div id="pnlEdad" class="input-group">
-            <span id="tx" class="label-info input-group-addon">Edad</span>
-            <asp:TextBox type="text" class="form-control" id="txtEdad" disabled runat="server"></asp:TextBox>
+            <span id="tx" class="label-info input-group-addon">Telefono</span>
+            <asp:TextBox type="text" class="form-control" id="txtFono" disabled runat="server"></asp:TextBox>
         </div>
-        <asp:Label ID="test" runat="server"></asp:Label>
     </fieldset>
     <div id="fldBtnForm">
-        <a id="btnForm" href="FormularioMed.aspx" class="btn btn-success">Formulario Medicamentos  <span class="glyphicon glyphicon-plus"></span></a>
+        <asp:Button id="btnForm" class="btn btn-success" runat="server" Text="Form Medicamentos" OnClick="btnForm_Click"></asp:Button>
     </div>
 </asp:Content>
 

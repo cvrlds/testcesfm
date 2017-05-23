@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 using WSCESFM;
 using Negocio;
 using Newtonsoft.Json;
+using System.Windows;
 
 
 public partial class MasterWBCsfm : System.Web.UI.MasterPage
@@ -16,7 +17,12 @@ public partial class MasterWBCsfm : System.Web.UI.MasterPage
     {
         if(Session != null)
         {
-            lblBienv.Text = "Bienvenido " + Session["usuario"].ToString();
+            lblBienv.Text = "Bienvenido " + Session["nobMedico"].ToString();
+        }
+        else
+        {
+            Session.RemoveAll();
+            Server.Transfer("./Login.aspx", true);
         }
     }
 

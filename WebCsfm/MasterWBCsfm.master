@@ -12,6 +12,8 @@
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="css/master.css" rel="stylesheet"/>
     <link href="css/general.css" rel="stylesheet" />
+    <script>
+    </script>
 </head>
 <body>
     <div class="navbar">
@@ -29,9 +31,9 @@
             <PathSeparatorStyle Font-Bold="True" ForeColor="#990000" />
             <RootNodeStyle Font-Bold="True" ForeColor="#FF8000" />
         </asp:SiteMapPath>
-        <asp:Label ID="lblBienv" runat="server" Font-Bold="True" Font-Names="Tahoma" ForeColor="Black" ToolTip="Hola!">Bienvenido </asp:Label>
-        <asp:Panel ID="Panel1" runat="server">
-            <asp:Label ID="lbSalida" runat="server" Text="Label"><i class="salida glyphicon glyphicon-log-out"></i> Salir</asp:Label>
+        <asp:Label ID="lblBienv" runat="server" Font-Bold="True" Font-Names="Tahoma" ForeColor="Blue" ToolTip="Hola!">Bienvenido </asp:Label>
+        <asp:Panel ID="lbSalida" runat="server">
+            <span class="glyphicon glyphicon-log-out"><input id="btnSalir" type="button" runat="server" value="Salir" onserverclick="salir_Click"/></span>
         </asp:Panel>
     </div>
         <div>
