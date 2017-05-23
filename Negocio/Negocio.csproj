@@ -46,7 +46,7 @@
     <Compile Include="Medicamento.cs" />
     <Compile Include="Medico.cs" />
     <Compile Include="Paciente.cs" />
-    <Compile Include="Prescripcion.cs" />
+    <Compile Include="DetalleForm.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
