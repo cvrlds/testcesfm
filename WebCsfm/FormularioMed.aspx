@@ -128,32 +128,7 @@
         <asp:ScriptManager ID="ScriptManager1" runat="server">
         </asp:ScriptManager>
         <asp:UpdatePanel ID="UpdatePanel1" runat="server">
-            <ContentTemplate>
-                <!-- Modal -->
-                <asp:Label ID="Label1" runat="server" Text=""></asp:Label><br />
-                <div class="modal fade" id="myModalMed" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div id="tituloMod" class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span></button>
-                                <h4 class="modal-title" id="myModalLblMed">Buscar Medicamento</h4>
-                            </div>
-                            <div class="modal-body">
-                                <div id="busq" class="input-group">
-                                    <input id="buscar" type="text" class="form-control" name="buscar" placeholder="Ingresar Medicamento" />
-                                    <span class="input-group-addon"><i class="glyphicon glyphicon-search" ></i></span>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <asp:Button Text="Guardar" runat="server" class="btn btn-success" data-dismiss="modal" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </ContentTemplate>
+            
         </asp:UpdatePanel>
     </form>
 </body>
