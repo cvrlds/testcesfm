@@ -135,3 +135,11 @@ fieldset{
    font-weight: 900;
    text-decoration:underline;
 }
+
+#prescr{
+    border: 0px;
+}
+
+#med{
+    border: 0px;
+}

@@ -7,7 +7,6 @@ using System.Web.UI.WebControls;
 using WSCESFM;
 using Negocio;
 using Newtonsoft.Json;
-using System.Windows;
 
 
 public partial class MasterWBCsfm : System.Web.UI.MasterPage
@@ -27,7 +26,6 @@ public partial class MasterWBCsfm : System.Web.UI.MasterPage
                 string ssNomb = Session["nombMed"].ToString() + " " + Session["apPatMed"].ToString();
                 lblBienv.Text = "Bienvenido " + ssNomb;
             }
-            
         }
         catch (NullReferenceException ae)
         {
@@ -38,8 +36,16 @@ public partial class MasterWBCsfm : System.Web.UI.MasterPage
 
     protected void salir_Click(object sender, EventArgs e)
     {
-        Session.RemoveAll();
-        Server.Transfer("./Login.aspx", true);
+        try
+        {
+            Session.RemoveAll();
+            Server.Transfer("./Login.aspx", true);
+        }
+        catch (NullReferenceException nre)
+        {
+
+            throw new NullReferenceException("Favor contactar al Aministrador del Sistema!", nre);
+        }
     }
 
 }

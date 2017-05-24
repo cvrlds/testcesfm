@@ -7,7 +7,6 @@ using System.Web.UI.WebControls;
 using Newtonsoft.Json;
 using WSCESFM;
 using Negocio;
-using System.Windows;
 
 public partial class Login : System.Web.UI.Page
 {
@@ -20,11 +19,12 @@ public partial class Login : System.Web.UI.Page
 
     protected void btnIngresar_Click(object sender, EventArgs e)
     {
-        string val = wsCSFM.getMedicoRut(user.Text).Replace(@"\", "").Replace(@"[", "").Replace(@"]", "").Replace("}}", "}");
-        val = val.Substring(val.IndexOf(':') + 1);
-
         try
         {
+            string val = wsCSFM.getMedicoRut(user.Text).Replace(@"\", "").Replace(@"[", "").Replace(@"]", "").Replace("}}", "}");
+            val = val.Substring(val.IndexOf(':') + 1);
+
+        
             if (val.Equals("}"))
             {
                 ClientScript.RegisterStartupScript(Page.GetType(), "Message", "alert('" + "Su usuario es Incorrecto, favor intentar nuevamente." + "');", true);
@@ -62,7 +62,7 @@ public partial class Login : System.Web.UI.Page
         }
         catch (ArgumentNullException ex)
         {
-            throw new ArgumentNullException("Por favor contacte al Equipo Informatico. ", ex);
+            throw new ArgumentNullException("Por favor contacte al Administrador del Sistema!", ex);
         }
       }
 }

@@ -40,7 +40,15 @@ public partial class Pruebas : System.Web.UI.Page
 
     protected void btnSalir_ServerClick(object sender, EventArgs e)
     {
-        Session.RemoveAll();
-        Response.Redirect("./Login.aspx");
+        try
+        {
+            Session.RemoveAll();
+            Response.Redirect("./Login.aspx");
+        }
+        catch (ArgumentNullException arg)
+        {
+
+            throw new ArgumentNullException("Favor contactar al Administrador del Sistema!", arg);
+        }
     }
 }

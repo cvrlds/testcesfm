@@ -8,6 +8,7 @@ namespace Negocio
 {
     public class Medicamento
     {
+        public string idMedicamento { get; set; }
         public string Nombre { get; set; }
         public int Cantidad { get; set; }
         public string UnidadMedida { get; set; }

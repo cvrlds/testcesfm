@@ -16,16 +16,28 @@ public partial class _Default : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        
+        try
+        {
+            if (Session["nombMed"].ToString().Equals(" "))
+            {
+                Session.Abandon();
+                Response.Redirect("./Login.aspx");
+            }
+        }
+        catch (NullReferenceException ae)
+        {
+            throw new NullReferenceException("Error: ", ae);
+        }
     }
 
     protected void buscar_Click(object sender, EventArgs e)
     {
-        string val = wsCSFM.getPacienteRut(txBusq.Text).Replace(@"\", "").Replace(@"[", "").Replace(@"]", "").Replace("}}", "}");
-        val = val.Substring(val.IndexOf(':') + 1);
-
         try
         {
+            string val = wsCSFM.getPacienteRut(txBusq.Text).Replace(@"\", "").Replace(@"[", "").Replace(@"]", "").Replace("}}", "}");
+            val = val.Substring(val.IndexOf(':') + 1);
+
+       
             if(val.Equals("}"))
             {
                 ClientScript.RegisterStartupScript(Page.GetType(), "Message", "alert('" + "No se encuentra el Paciente. Favor intente de nuevo" + "');", true);
