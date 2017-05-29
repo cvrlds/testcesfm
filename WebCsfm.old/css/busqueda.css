@@ -1,0 +1,49 @@
+﻿body {
+    background-image: url(../recursos/imagenes/15734-NQG5LW.jpg);
+}
+
+fieldset{
+    width: 350px;
+    position: relative;
+}
+
+#busq{
+    margin-left: 4em;
+    margin-top: 3em;
+    margin-bottom: 5em;
+    width: 150px;
+}
+
+#btnBusq{
+    width: 30px;
+}
+
+#pnlRut{
+    margin-left: 4em;
+    margin-bottom: 2em;
+    margin-right: 6em;
+    width: 160px;
+
+}
+
+#pnlNomb{
+    margin-left: 4em;
+    margin-bottom: 2em;
+    width: 350px;
+}
+
+#pnlEdad{
+    margin-left: 4em;
+    margin-right: 6em;
+    width: 190px;
+}
+
+#fldBtnForm{
+   text-align: right;
+   margin-top: -8em;
+   margin-right: 15%;
+}
+
+#btnForm{
+    margin-left: 4em;
+}

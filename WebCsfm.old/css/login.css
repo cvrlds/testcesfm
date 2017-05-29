@@ -1,0 +1,32 @@
+﻿body {
+    background-image: url(../recursos/imagenes/fondo_Login.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.jumbotron{
+    background-color: steelblue;
+    color: white;
+}
+
+h1{
+    text-align: center;
+}
+
+fieldset{
+    width: 20%;
+    margin: 0 auto;
+}
+
+.input-group {
+    margin-top: 3em;
+}
+
+button{
+    margin-top: 2em;
+}
+
+img{
+    width: 100px;
+    border-radius: 20px;
+}

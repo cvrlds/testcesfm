@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterWBCsfm.master.cs" Inherits="MasterWBCsfm" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Cesfam - Busqueda</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/master.css" rel="stylesheet"/>
+    <link href="css/general.css" rel="stylesheet" />
+    <script>
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <h2><img src="recursos/imagenes/logo_cesfam.jpg"/> CESFAM - Santiago Centro</h2>
+        </div>
+    </div>
+    <form id="form1" runat="server">
+        
+    <div class="bread">
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="true"/>
+        <asp:SiteMapPath ID="SiteMapPath1" runat="server" Font-Names="Verdana" Font-Size="0.8em" PathSeparator=" : ">
+            <CurrentNodeStyle ForeColor="#333333" />
+            <NodeStyle Font-Bold="True" ForeColor="#990000" />
+            <PathSeparatorStyle Font-Bold="True" ForeColor="#990000" />
+            <RootNodeStyle Font-Bold="True" ForeColor="#FF8000" />
+        </asp:SiteMapPath>
+        <asp:Label ID="lblBienv" runat="server" Font-Bold="True" Font-Names="Tahoma" ForeColor="Blue" ToolTip="Hola!">Bienvenido </asp:Label>
+        <asp:Panel ID="lbSalida" runat="server">
+            <span class="glyphicon glyphicon-log-out"><input id="btnSalir" type="button" runat="server" value="Salir" onserverclick="salir_Click"/></span>
+        </asp:Panel>
+    </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    
+</body>
+</html>

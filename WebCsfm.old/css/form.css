@@ -1,0 +1,202 @@
+﻿body {
+    background-image: url(../recursos/imagenes/15734-NQG5LW.jpg);
+ }
+
+#Content2{
+    text-align: center;
+}
+
+#titulo{
+    margin-top: -1em;
+}
+
+#txtCod{
+    padding-right: 3em;
+    text-align: center;
+}
+
+#txtFecha{
+    text-align: center;
+}
+
+#txtPac{
+    width: 350px;
+}
+
+#tabla{
+    box-shadow: lightblue 5px 5px;
+    border: 1px solid;
+}
+
+#tbl {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+}
+
+th{
+    background-color: steelblue;
+    color: whitesmoke;
+    text-align: center;
+}
+
+td{
+    background-color: ghostwhite;
+    border: 0.5px dotted;
+    text-align: center;
+}
+
+
+.ico{
+    text-align:left;
+}
+
+td{
+    background-color: ghostwhite;
+    border: 0.5px dotted;
+    text-align: center;
+}
+
+.btn-round {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.btn-round.btn-lg {
+    width: 48px;
+    height: 48px;
+}
+
+.inline{
+    width: auto;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+#pnlInp{
+    margin-top: 6em;
+    margin-right: 10em;
+    margin-left: 13em
+}
+
+#pnlTrat{
+    width: 20%;
+    margin: 0 auto;
+}
+
+#check{
+    text-align: center;
+}
+
+#btnOk{
+    text-align: center;
+    margin-top: 2em;
+
+}
+
+fieldset{
+    margin-top: 6em
+}
+
+#pnlCant{
+    width: auto;
+}
+
+#txCant, #txHrs, #txDia{
+    width: 50px;
+    text-align: center;
+}
+
+#Label2{
+    margin-left:70px;
+}
+
+#Label4, #Label5, #Label6, #Label7{
+    margin-left:15px;
+}
+
+#btnSalir{
+    color: red;
+    border: 0px;
+    background: unset;
+    font-family: Tahoma;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+#lbSalida{
+   position: absolute;
+   right: 0;
+   padding-right: 1em;
+   color: red;
+   font-weight: 900;
+   text-decoration:underline;
+}
+
+#med1, #med2, #med3, #med4, #med5{
+    border: 0px;
+    background-color: steelblue;
+    color: ghostwhite;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+#txPresc1, #txPresc2, #txPresc3, #txPresc4, #txPresc5{
+    width: 90%;
+}
+
+#txMed1, #txMed2, #txMed3, #txMed4. #txMed5{
+    width: 90%;
+    background-color: ghostwhite;
+}
+
+.ModalPopUpBG{
+    background-color: #666699;
+    filter: alpha(opacity=50);
+    opacity: 0.7;
+}
+
+.HelloWorlPopup{
+    width: 500px;
+    height: 400px;
+    background: white;
+    padding:1em;
+}
+
+.PopupHeader{
+    background-color: steelblue;
+    color: whitesmoke;
+    padding-left: 1em;
+    font-weight: 600;
+    font-family: Tahoma;
+}
+
+.panel{
+  box-shadow: black 5px 5px;
+}
+
+#btnBusca{
+    background-image:url(../recursos/imagenes/search-icon.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    vertical-align: 
+}
+
+.Controls{
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+#btnOkay{
+    padding-right: 1em;
+    margin-right: 5em;
+    margin-left: 15em;
+}
+
+#GridView1{
+    margin: 1em 3.5em;
+}

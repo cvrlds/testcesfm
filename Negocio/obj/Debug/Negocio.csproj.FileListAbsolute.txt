@@ -16,4 +16,14 @@ C:\Users\claudio\Source\Repos\Team-Web-CESFAM\Negocio\bin\Debug\Negocio.dll
 C:\Users\claudio\Source\Repos\Team-Web-CESFAM\Negocio\bin\Debug\Negocio.pdb
 C:\Users\claudio\Source\Repos\Team-Web-CESFAM\Negocio\obj\Debug\Negocio.dll
 C:\Users\claudio\Source\Repos\Team-Web-CESFAM\Negocio\obj\Debug\Negocio.pdb
-C:\Users\claudio\Source\Repos\Team-Web-CESFAM\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\luisa\Source\Repos\Team-Web-CESFAM2\Negocio\bin\Debug\Negocio.dll.config
+C:\Users\luisa\Source\Repos\Team-Web-CESFAM2\Negocio\bin\Debug\Negocio.dll
+C:\Users\luisa\Source\Repos\Team-Web-CESFAM2\Negocio\bin\Debug\Negocio.pdb
+C:\Users\luisa\Source\Repos\Team-Web-CESFAM2\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Users\luisa\Source\Repos\Team-Web-CESFAM2\Negocio\obj\Debug\Negocio.dll
+C:\Users\luisa\Source\Repos\Team-Web-CESFAM2\Negocio\obj\Debug\Negocio.pdb
+E:\Proyecyos\Team-Web-CESFAM-Cesfam\Team-Web-CESFAM-Cesfam\Negocio\bin\Debug\Negocio.dll.config
+E:\Proyecyos\Team-Web-CESFAM-Cesfam\Team-Web-CESFAM-Cesfam\Negocio\bin\Debug\Negocio.dll
+E:\Proyecyos\Team-Web-CESFAM-Cesfam\Team-Web-CESFAM-Cesfam\Negocio\bin\Debug\Negocio.pdb
+E:\Proyecyos\Team-Web-CESFAM-Cesfam\Team-Web-CESFAM-Cesfam\Negocio\obj\Debug\Negocio.dll
+E:\Proyecyos\Team-Web-CESFAM-Cesfam\Team-Web-CESFAM-Cesfam\Negocio\obj\Debug\Negocio.pdb

@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:50452/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:element name="getAdmin">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getAdminResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getAdminResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getAdminId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idAdmin" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getAdminIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getAdminIdResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getControlStock">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getControlStockResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getControlStockResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getControlStockId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idControl" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getControlStockIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getControlStockIdResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getDetForm">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getDetFormResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getDetFormResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getDetFormId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idFormulario" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getDetFormIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getDetFormIdResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getFormMedicamentos">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getFormMedicamentosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getFormMedicamentosResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getFormMedicamentosId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idForm" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getFormMedicamentosIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getFormMedicamentosIdResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getLaboratorio">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getLaboratorioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getLaboratorioResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getLaboratorioId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idLaboratorio" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getLaboratorioIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getLaboratorioIdResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMedicamentos">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMedicamentosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getMedicamentosResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMedicamentosByName">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strMedicamento" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMedicamentosByNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getMedicamentosByNameResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMedicamentosPorNombre">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="strMedicamento" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMedicamentosPorNombreResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getMedicamentosPorNombreResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMedicamentosId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idMedicamento" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMedicamentosIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getMedicamentosIdResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMedico">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMedicoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getMedicoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMedicoRut">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="rutUser" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMedicoRutResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getMedicoRutResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMovimientosMed">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMovimientosMedResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getMovimientosMedResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMovimientosMedId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idMovimiento" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getMovimientosMedIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getMovimientosMedIdResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getPaciente">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getPacienteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getPacienteResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getPacienteRut">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="rutPaciente" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getPacienteRutResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getPacienteRutResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTipoMedicamento">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTipoMedicamentoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getTipoMedicamentoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTipoMedicamentoId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idTipoMed" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTipoMedicamentoIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getTipoMedicamentoIdResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTipoMovimiento">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTipoMovimientoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getTipoMovimientoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTipoMovimientoId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idMoviento" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTipoMovimientoIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getTipoMovimientoIdResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTutor">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTutorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getTutorResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTutorRut">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="rutTutor" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTutorRutResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getTutorRutResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getUnidadMedida">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getUnidadMedidaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getUnidadMedidaResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getUnidadMedidaId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idUnidad" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getUnidadMedidaIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getUnidadMedidaIdResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getUsuario">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getUsuarioResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getUsuarioRut">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="rutUser" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getUsuarioRutResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getUsuarioRutResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdtAdmin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id_Admin" type="xs:int" />
+        <xs:element minOccurs="0" name="Cargo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Privilegio" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdtAdminResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdtControlStock">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id_Control" type="xs:int" />
+        <xs:element minOccurs="0" name="Stock_Individual" type="xs:int" />
+        <xs:element minOccurs="0" name="Lote" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Fech_Vencimiento" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Fech_Ingreso" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Medicamentos_Id_Medicamento" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdtControlStockResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdtDetForm">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FORM_MEDICAMENTOS_ID_FORM" type="xs:int" />
+        <xs:element minOccurs="0" name="MEDICAMENTOS_ID_MEDICAMENTO" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID_DETALLE" type="xs:int" />
+        <xs:element minOccurs="0" name="PRESCRIPCION" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CANTIDAD_ENTREGADA" type="xs:int" />
+        <xs:element minOccurs="0" name="FECHA_ENTREGA" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FECHA_PROX__ENTREGA" nillable="true" type="xs:string" />
+        <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="ESTADO_ENTREGA" type="q1:char" />
+        <xs:element minOccurs="0" name="ENTREGADO_POR" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdtDetFormResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdtFormMedicamentos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID_FORM" type="xs:int" />
+        <xs:element minOccurs="0" name="FECHA_EMISION" nillable="true" type="xs:string" />
+        <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="TIPO_TRATAMIENTO" type="q2:char" />
+        <xs:element minOccurs="0" name="PACIENTE_RUT_PACIENTE" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MEDICO_RUT_USER" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdtFormMedicamentosResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdtLaboratorio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID_LABORATORIO" type="xs:int" />
+        <xs:element minOccurs="0" name="NOM_LABORATORIO" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdtLaboratorioResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdtMedicamentos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID_MEDICAMENTO" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NOMBRE" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DESCRIPCION" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CANT_UM" type="xs:int" />
+        <xs:element minOccurs="0" name="STOCK_GENERAL" type="xs:int" />
+        <xs:element minOccurs="0" name="STOCK_CRITICO" type="xs:int" />
+        <xs:element minOccurs="0" name="UNIDAD_MEDIDA_ID_UNIDAD" type="xs:int" />
+        <xs:element minOccurs="0" name="LABORATORIO_ID_LABORATORIO" type="xs:int" />
+        <xs:element minOccurs="0" name="TIPO_MEDICAMENTO_ID_TIPO" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdtMedicamentosResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdtMedico">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RUT_USER" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NOMBRES" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="APELLIDO_PAT" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="APELLIDO_MAT" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PASS" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdtMedicoResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdtMovimientosMed">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID_MOVIMIENTO" type="xs:int" />
+        <xs:element minOccurs="0" name="CANTIDAD" type="xs:int" />
+        <xs:element minOccurs="0" name="FECHA_MOVIMIENTO" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID_DETALLE" type="xs:int" />
+        <xs:element minOccurs="0" name="TIPO_MOVIMIENTO_ID_MOVIENTO" type="xs:int" />
+        <xs:element minOccurs="0" name="CONTROL_STOCK_ID_CONTROL" type="xs:int" />
+        <xs:element minOccurs="0" name="USUARIO_RUT_USER" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdtMovimientosMedResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdtPaciente">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RUT_PACIENTE" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NOMBRES" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="APELLIDO_PAT" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="APELLIDO_MAT" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SECTOR" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DIRECCION" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CELULAR" type="xs:int" />
+        <xs:element minOccurs="0" name="RED_FIJA" type="xs:int" />
+        <xs:element minOccurs="0" name="RUT_TUTOR" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdtPacienteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdtTipoMedicamento">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID_TIPO" type="xs:int" />
+        <xs:element minOccurs="0" name="NOMBRE_TIPO" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdtTipoMedicamentoResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdtTipoMovimiento">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID_MOVIENTO" type="xs:int" />
+        <xs:element minOccurs="0" name="NOM_MOVIMIENTO" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdtTipoMovimientoResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdtTutor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RUT_TUTOR" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NOMBRES" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="APELLIDO_PAT" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="APELLIDO_MAT" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DIRECCION" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CELULAR" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdtTutorResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdtUnidadMedida">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID_UNIDAD" type="xs:int" />
+        <xs:element minOccurs="0" name="NOMBRE_UNIDAD" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdtUnidadMedidaResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdtUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Rut" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Nombres" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Ape_Pat" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Ape_Mat" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Pass" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Id_Adm" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdtUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsAdmin">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id_Admin" type="xs:int" />
+        <xs:element minOccurs="0" name="Cargo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Privilegio" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsAdminResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsControlStock">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Id_Control" type="xs:int" />
+        <xs:element minOccurs="0" name="Stock_Individual" type="xs:int" />
+        <xs:element minOccurs="0" name="Lote" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Fecha_Venc" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Fecha_Ingreso" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Medicamentos_Id_Medicamento" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsControlStockResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsDetForm">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FORM_MEDICAMENTOS_ID_FORM" type="xs:int" />
+        <xs:element minOccurs="0" name="MEDICAMENTOS_ID_MEDICAMENTO" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID_DETALLE" type="xs:int" />
+        <xs:element minOccurs="0" name="PRESCRIPCION" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CANTIDAD_ENTREGADA" type="xs:int" />
+        <xs:element minOccurs="0" name="FECHA_ENTREGA" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="FECHA_PROX__ENTREGA" nillable="true" type="xs:string" />
+        <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="ESTADO_ENTREGA" type="q3:char" />
+        <xs:element minOccurs="0" name="ENTREGADO_POR" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsDetFormResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsFormMedicamentos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID_FORM" type="xs:int" />
+        <xs:element minOccurs="0" name="FECHA_EMISION" nillable="true" type="xs:string" />
+        <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="TIPO_TRATAMIENTO" type="q4:char" />
+        <xs:element minOccurs="0" name="PACIENTE_RUT_PACIENTE" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="MEDICO_RUT_USER" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsFormMedicamentosResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsLaboratorio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID_LABORATORIO" type="xs:int" />
+        <xs:element minOccurs="0" name="NOM_LABORATORIO" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsLaboratorioResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsMedicamentos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID_MEDICAMENTO" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NOMBRE" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DESCRIPCION" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CANT_UM" type="xs:int" />
+        <xs:element minOccurs="0" name="STOCK_GENERAL" type="xs:int" />
+        <xs:element minOccurs="0" name="STOCK_CRITICO" type="xs:int" />
+        <xs:element minOccurs="0" name="UNIDAD_MEDIDA_ID_UNIDAD" type="xs:int" />
+        <xs:element minOccurs="0" name="LABORATORIO_ID_LABORATORIO" type="xs:int" />
+        <xs:element minOccurs="0" name="TIPO_MEDICAMENTO_ID_TIPO" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsMedicamentosResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsMedico">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RUT_USER" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NOMBRES" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="APELLIDO_PAT" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="APELLIDO_MAT" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PASS" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsMedicoResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsMovimientosMed">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID_MOVIMIENTO" type="xs:int" />
+        <xs:element minOccurs="0" name="CANTIDAD" type="xs:int" />
+        <xs:element minOccurs="0" name="FECHA_MOVIMIENTO" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ID_DETALLE" type="xs:int" />
+        <xs:element minOccurs="0" name="TIPO_MOVIMIENTO_ID_MOVIENTO" type="xs:int" />
+        <xs:element minOccurs="0" name="CONTROL_STOCK_ID_CONTROL" type="xs:int" />
+        <xs:element minOccurs="0" name="USUARIO_RUT_USER" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsMovimientosMedResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsPaciente">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RUT_PACIENTE" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NOMBRES" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="APELLIDO_PAT" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="APELLIDO_MAT" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SECTOR" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DIRECCION" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CELULAR" type="xs:int" />
+        <xs:element minOccurs="0" name="RED_FIJA" type="xs:int" />
+        <xs:element minOccurs="0" name="RUT_TUTOR" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsPacienteResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsTipoMedicamento">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID_TIPO" type="xs:int" />
+        <xs:element minOccurs="0" name="NOMBRE_TIPO" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsTipoMedicamentoResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsTipoMovimiento">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID_MOVIENTO" type="xs:int" />
+        <xs:element minOccurs="0" name="NOM_MOVIMIENTO" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsTipoMovimientoResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsTutor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="RUT_TUTOR" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NOMBRES" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="APELLIDO_PAT" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="APELLIDO_MAT" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DIRECCION" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CELULAR" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsTutorResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsUnidadMedida">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID_UNIDAD" type="xs:int" />
+        <xs:element minOccurs="0" name="NOMBRE_UNIDAD" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsUnidadMedidaResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsUsuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Rut" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Nombres" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Ape_Pat" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Ape_Mat" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Pass" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Id_Adm" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsUsuarioResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

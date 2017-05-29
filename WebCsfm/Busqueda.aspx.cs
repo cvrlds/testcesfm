@@ -88,7 +88,6 @@ public partial class _Default : System.Web.UI.Page
             }
             else
             {
-                test.Text = " ";
                 //test.Text = Session["rutPac"].ToString();
                 Response.Redirect("./FormularioMed.aspx");
             }

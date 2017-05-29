@@ -15,7 +15,7 @@ namespace Negocio
         public int CantidadEntregada { get; set; }
         public DateTime FechaEntrega { get; set; }
         public DateTime FechaProximaEntrega { get; set; }
-        public bool EstadoEntrega { get; set; }
+        public string EstadoEntrega { get; set; }
         public string EntregadoPor { get; set; }
 
 
@@ -33,7 +33,7 @@ namespace Negocio
             CantidadEntregada = 0;
             FechaEntrega = DateTime.Today;
             FechaProximaEntrega = DateTime.Today;
-            EstadoEntrega = false;
+            EstadoEntrega = string.Empty;
             EntregadoPor = string.Empty;
         }
     }

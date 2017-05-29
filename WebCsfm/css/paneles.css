@@ -1,0 +1,1362 @@
+﻿/*--------------------cover screen-------------------------*/
+.div_Loading
+{
+    top: 100px;
+    left: 200px;
+    right: 200px;
+    bottom: 100px;
+    position:fixed;
+    background:url() center no-repeat transparent;
+    background-color: #041E2F; 
+    filter: alpha(opacity=80); 
+    opacity: 0.8; 
+    text-align:center;
+    padding-top: 100px;
+    border: solid 2px #8C734A;
+}
+/*--------------------- Titulos ------------------------*/
+
+/* Titulos WUC-PopUp*/
+.Div_Titulo {
+    margin-top:-10px;
+    margin-left:-10px;
+    margin-right:-10px;
+    margin-bottom:10px;
+    padding:10px;
+    background-color: #808081;
+    color: #e4ebe4;
+    font-family: Arial;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+/*--------------------Menu Opciones-------------------------*/
+.btn_Guardar
+{
+    margin:10px;
+    float:left;
+    width:100px;height:30px;
+    background-image:url('../Images/Barra_Herramientas/24/Mover.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    vertical-align:text-top; 
+    background-color:transparent;
+    border-width:1px;
+}
+
+.btn_Guardar:hover
+{
+    margin:10px;
+    float:left;
+    width:100px;
+    /*Background-image:url('../Imagenes/Barra/Aprobar_2.png');*/
+    background-repeat:no-repeat;
+    background-position:center;
+    box-shadow: 5px 5px 15px 5px #8C734A; 
+    background-color:transparent;
+    border-width:1px;
+    /*border-radius: 15px;*/
+}
+
+.btn_Buscar
+{
+    width:100px;
+    height:24px;
+    float:left;
+    background-image:url('../Images/Botones/Buscar.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    vertical-align:text-top; 
+    background-color:transparent;
+}
+
+.btn_Buscar:hover
+{
+    float:left;
+    background-repeat:no-repeat;
+    background-position:center;
+    box-shadow: 5px 5px 15px 5px #8C734A; 
+    background-color:transparent;
+}
+
+.btn_Aprobadores {
+    Background-image:url('../Images/Barra_Herramientas/24/Lista.png');
+    background-repeat:no-repeat;
+    width:24px;
+    height:24px;
+    position:absolute;
+    z-index:2;
+    border: solid 0px transparent; 
+}
+
+.btn_Aprobar:hover
+{
+    float:left;
+    background-repeat:no-repeat;
+    background-position:center;
+    box-shadow: 5px 5px 15px 5px #8C734A; 
+    background-color:transparent;
+}
+
+.btn_Aprodores
+{
+    width:100px;
+    height:24px;
+    /*float:left;*/
+    background-image:url('../Images/Botones/Lista.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    vertical-align:text-top; 
+    background-color:transparent;
+}
+
+.btn_Aprodores:hover
+{
+    float:left;
+    background-repeat:no-repeat;
+    background-position:center;
+    box-shadow: 5px 5px 15px 5px #8C734A; 
+    background-color:transparent;
+}
+
+.btn_Rechazar
+{
+    width:100px;
+    height:24px;
+    float:left;
+    background-image:url('../Images/Botones/Rechazar.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    vertical-align:text-top; 
+    background-color:transparent;
+}
+
+.btn_Rechazar:hover
+{
+    float:left;
+    background-repeat:no-repeat;
+    background-position:center;
+    box-shadow: 5px 5px 15px 5px #8C734A; 
+    background-color:transparent;
+}
+
+.btn_Anular
+{
+    width:100px;
+    height:24px;
+    float:left;
+    background-image:url('../Images/Botones/Anular.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    vertical-align:text-top; 
+    background-color:transparent;
+}
+
+.btn_Anular:hover
+{
+    float:left;
+    background-repeat:no-repeat;
+    background-position:center;
+    box-shadow: 5px 5px 15px 5px #8C734A; 
+    background-color:transparent;
+}
+
+.btn_Descargar
+{
+    width:24px;
+    height:24px;
+    float:left;
+    background-image:url('../Images/Barra_Herramientas/24/Replicar.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    vertical-align:text-top; 
+    background-color:transparent;
+}
+
+.btn_Descargar:hover
+{
+    float:left;
+    background-repeat:no-repeat;
+    background-position:center;
+    box-shadow: 5px 5px 15px 5px #8C734A; 
+    background-color:transparent;
+}
+
+.btn_Modificar
+{
+    width:24px;
+    height:24px;
+    float:left;
+    background-image:url('../Images/Barra_Herramientas/24/Editar.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    vertical-align:text-top; 
+    background-color:transparent;
+}
+
+.btn_Modificar:hover
+{
+    float:left;
+    background-repeat:no-repeat;
+    background-position:center;
+    box-shadow: 5px 5px 15px 5px #8C734A; 
+    background-color:transparent;
+}
+
+.btn_Adjuntar
+{
+    width:100px;
+    height:24px;
+    float:left;
+    background-image:url('../Images/botones/Adjuntar.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    vertical-align:text-top; 
+    background-color:transparent;
+}
+
+.btn_Adjuntar:hover
+{
+    float:left;
+    background-repeat:no-repeat;
+    background-position:center;
+    box-shadow: 5px 5px 15px 5px #8C734A; 
+    background-color:transparent;
+}
+
+.btn_Adjuntos
+{
+    width:100px;
+    height:24px;
+    float:left;
+    background-image:url('../Images/Botones/Adjuntos.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    vertical-align:text-top; 
+    background-color:transparent;
+}
+
+.btn_Adjuntos:hover
+{
+    float:left;
+    background-repeat:no-repeat;
+    background-position:center;
+    box-shadow: 5px 5px 15px 5px #8C734A; 
+    background-color:transparent;
+}
+
+.btn_Historial
+{
+    width:100px;
+    height:24px;
+    float:left;
+    background-image:url('../Images/Botones/Historial.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    vertical-align:text-top; 
+    background-color:transparent;
+}
+
+.btn_Historial:hover
+{
+    float:left;
+    background-repeat:no-repeat;
+    background-position:center;
+    box-shadow: 5px 5px 15px 5px #8C734A; 
+    background-color:transparent;
+}
+
+.btn_Cerrar
+{
+    width:24px;
+    height:24px;
+    float:left;
+    background-image:url('../Images/Barra_Herramientas/24/NO_OK.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    vertical-align:text-top; 
+    background-color:transparent;
+}
+
+.btn_Cerrar:hover
+{
+    float:left;
+    background-repeat:no-repeat;
+    background-position:center;
+    box-shadow: 5px 5px 15px 5px #8C734A; 
+    background-color:transparent;
+}
+.btn_Limpiar
+{
+    margin:10px;
+    float:left;
+    width:100px;
+    height:30px;
+    background-image:url('../Imagenes/Barra/Limpiar.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    border-bottom-width:0px;
+    vertical-align:text-top; 
+    background-color:transparent;
+    border-width:1px;
+}
+
+.btn_Limpiar:hover
+{
+    margin:10px;
+    float:left;
+    width:100px;
+    Background-image:url('../Imagenes/Barra/Limpiar_2.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    box-shadow: 5px 5px 15px 5px #8C734A; 
+    background-color:transparent;
+    border-width:1px;
+    /*border-radius: 15px;*/
+}
+.btn_Bloquear
+{
+    margin:10px;
+    float:left;
+    width:100px;
+    height:30px;
+    background-image:url('../Imagenes/Barra/PadLock_2.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    border-bottom-width:0px;
+    vertical-align:text-top; 
+    background-color:transparent;
+    border-width:1px;
+}
+
+.btn_Bloquear:hover
+{
+    margin:10px;
+    float:left;
+    width:100px;
+    height:30px;
+    Background-image:url('../Imagenes/Barra/PadLock.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    box-shadow: 5px 5px 15px 5px #8C734A; 
+    background-color:transparent;
+    border-width:1px;
+    /*border-radius: 15px;*/
+}
+
+.btn_Asignar
+{
+    width:100px;
+    height:24px;
+    float:left;
+    background-image:url('../Images/Botones/Asignar.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    vertical-align:text-top; 
+    background-color:transparent;
+}
+
+.btn_Asignar:hover
+{
+    float:left;
+    background-repeat:no-repeat;
+    background-position:center;
+    box-shadow: 5px 5px 15px 5px #8C734A; 
+    background-color:transparent;
+}
+
+.btn_CREAR_OC
+{
+    width:100px;
+    height:24px;
+    float:left;
+    background-image:url('../Images/Botones/CREAR_OC.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    vertical-align:text-top; 
+    background-color:transparent;
+}
+
+.btn_CREAR_OC:hover
+{
+    float:left;
+    background-repeat:no-repeat;
+    background-position:center;
+    box-shadow: 5px 5px 15px 5px #8C734A; 
+    background-color:transparent;
+}
+
+.btn_Editar
+{
+    width:100px;
+    height:24px;
+    float:left;
+    background-image:url('../Images/Botones/Editar.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    vertical-align:text-top; 
+    background-color:transparent;
+}
+
+.btn_Editar:hover
+{
+    float:left;
+    background-repeat:no-repeat;
+    background-position:center;
+    box-shadow: 5px 5px 15px 5px #8C734A; 
+    background-color:transparent;
+}
+
+.btn_Imprimir
+{
+    width:100px;
+    height:24px;
+    float:left;
+    background-image:url('../Images/Barra_Herramientas/24/Imprimir.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    vertical-align:text-top; 
+    border: solid 0px transparent; 
+    background-color:transparent;
+}
+
+.btn_Imprimir:hover
+{
+    float:left;
+    background-repeat:no-repeat;
+    background-position:center;
+    box-shadow: 5px 5px 15px 5px #8C734A; 
+    background-color:transparent;
+}
+
+.btn_Estipendios {
+    Background-image:url('../Images/Barra_Herramientas/24/Foto.png');
+    background-repeat:no-repeat;
+    height:24px;
+    width:24px;
+    position:absolute;
+    z-index:1;
+    border: solid 0px transparent; 
+}
+.btn_Presupuesto
+{
+    background-image:url('../Images/Barra_Herramientas/24/Moneda.png');
+    width:24px;
+    height:24px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+}
+
+.btn_Presupuesto:hover
+{
+    width:24px;
+    height:24px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+}
+
+.Btn_Excel
+{
+    background-image:url('../Images/Extensiones/Excel.png');
+    width:24px;
+    height:24px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+}
+
+.Btn_Excel:hover
+{
+    background-image:url('../Images/download.gif');
+    width:24px;
+    height:24px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+}
+
+.btn_Carga_Masiva
+{
+    width:100px;
+    height:24px;
+    background-image:url('../Images/Botones/Carga_Masiva.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    vertical-align:text-top; 
+    background-color:transparent;
+}
+
+.btn_Carga_Masiva:hover
+{
+    width:100px;
+    height:24px;
+    /*Background-image:url('../Images/Botones/Carga_Masiva.png');*/
+    background-repeat:no-repeat;
+    background-position:center;
+    box-shadow: 5px 5px 15px 5px #8C734A; 
+    vertical-align:text-top; 
+    background-color:transparent;
+}
+
+.btn_Switch_Si
+{
+    width:100px;
+    height:20px;
+    background-image:url('../Images/Botones/Si.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    vertical-align:text-top; 
+    background-color:transparent;
+}
+
+.btn_Switch_No
+{
+    width:100px;
+    height:20px;
+    background-image:url('../Images/Botones/No.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    vertical-align:text-top; 
+    background-color:transparent;
+}
+
+.btn_Dias
+{
+    width:100px;
+    height:24px;
+    float:left;
+    background-image:url('../Images/Botones/Dias.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    vertical-align:text-top; 
+    background-color:transparent;
+    text-align:right;
+}
+
+.btn_Dias:hover
+{
+    float:left;
+    background-repeat:no-repeat;
+    background-position:center;
+    box-shadow: 5px 5px 15px 5px #8C734A; 
+    background-color:transparent;
+}
+
+
+/*-----------botones grillas ---------------------*/
+.btn_Grilla_Rechazar
+{
+    width:24px;
+    height:24px;
+    background-image:url('../Images/Barra_Herramientas/24/no_OK.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+}
+
+.btn_Grilla_Rechazar:hover
+{
+    width:24px;
+    height:24px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+ }
+
+.btn_Grilla_Rechazar_Disabled
+{
+    width:24px;
+    height:24px;
+    background-image:url('../Images/Barra_Herramientas/24_Disabled/No_Ok_Disabled.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+}
+.btn_Grilla_Aprobar
+{
+    width:24px;
+    height:24px;
+    background-image:url('../Images/Barra_Herramientas/24/Ok.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+}
+
+.btn_Grilla_Aprobar:hover
+{
+    width:24px;
+    height:24px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+ }
+
+.btn_Grilla_Aprobar_Disabled
+{
+    width:24px;
+    height:24px;
+    background-image:url('../Images/Barra_Herramientas/24_Disabled/Ok_Disabled.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+}
+.btn_Grilla_Ver
+{
+    width:24px;
+    height:24px;
+    background-image:url('../Images/Barra_Herramientas/24/Buscar.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+}
+
+.btn_Grilla_Ver:hover
+{
+    width:24px;
+    height:24px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+ }
+.btn_Grilla_Seleccionar
+{
+    width:24px;
+    height:24px;
+    background-image:url('../Images/Barra_Herramientas/24/Seleccionar.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+}
+
+.btn_Grilla_Seleccionar:hover
+{
+    width:24px;
+    height:24px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+ }
+
+.btn_Grilla_Seleccionar_Inhabilitada
+{
+    width:24px;
+    height:24px;
+    background-image:url('../Images/Barra_Herramientas/24_Disabled/Seleccionar.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+}
+
+.btn_Grilla_Seleccionar_Inhabilitada:hover
+{
+    width:24px;
+    height:24px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+ }
+
+.btn_Grilla_Editar
+{
+    width:24px;
+    height:24px;
+    background-image:url('../Images/Barra_Herramientas/24/Editar.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+}
+
+.btn_Grilla_Seleccionar:hover
+{
+    width:24px;
+    height:24px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+ }
+
+.btn_Grilla_Bloquear
+{
+    width:24px;
+    height:24px;
+    background-image:url('../Imagenes/Barra/PadLock_2.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+    border-width:0px;
+}
+
+.btn_Grilla_Bloquear:hover
+{
+    width:24px;
+    height:24px;
+    Background-image:url('../Imagenes/Barra/PadLock.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+    border-width:0px;
+    box-shadow: 5px 5px 15px 5px #8C734A; 
+    border-radius: 15px;
+}
+.btn_Grilla_Eliminar
+{
+    width:24px;
+    height:24px;
+    vertical-align:central;
+    text-align:center;
+    background-image:url('../Images/Barra_Herramientas/24/Eliminar.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+    border-width:0px;
+}
+
+.btn_Grilla_Eliminar:hover
+{
+    width:24px;
+    height:24px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+    border-width:0px;
+    box-shadow: 5px 5px 15px 5px #8C734A; 
+}
+.btn_Grilla_Modificar
+{
+    width:24px;
+    height:24px;
+    background-image:url('../Images/Barra_Herramientas/24/Editar.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+    border-width:0px;
+}
+
+.btn_Grilla_Modificar:hover
+{
+    width:24px;
+    height:24px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+    border-width:0px;
+    box-shadow: 5px 5px 15px 5px #8C734A; 
+}
+.btn_Grilla_Adjuntar
+{
+    width:24px;
+    height:24px;
+    background-image:url('../Images/Barra_Herramientas/24/Adjuntar.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+    border-width:0px;
+}
+
+.btn_Grilla_Adjuntar:hover
+{
+    width:24px;
+    height:24px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+    border-width:0px;
+    box-shadow: 5px 5px 15px 5px #8C734A; 
+}
+.btn_Grilla_Descargar
+{
+    width:24px;
+    height:24px;
+    text-align:center;
+    background-image:url('../Images/Barra_Herramientas/24/Replicar.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+    border-width:0px;
+}
+
+.btn_Grilla_Descargar:hover
+{
+    width:24px;
+    height:24px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+    border-width:0px;
+    box-shadow: 5px 5px 15px 5px #8C734A; 
+    text-align:center;
+}
+.btn_Grilla_Imprimir
+{
+    width:24px;
+    height:24px;
+    text-align:center;
+    background-image:url('../Images/Barra_Herramientas/24/Imprimir.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+    border-width:0px;
+}
+
+.btn_Grilla_Imprimir:hover
+{
+    width:24px;
+    height:24px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+    border-width:0px;
+    box-shadow: 5px 5px 15px 5px #8C734A; 
+    text-align:center;
+}
+
+.btn_Grilla_Asignar
+{
+    width:24px;
+    height:24px;
+    text-align:center;
+    background-image:url('../Images/Barra_Herramientas/24/PopUp.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+    border-width:0px;
+}
+
+.btn_Grilla_Asignar:hover
+{
+    width:24px;
+    height:24px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+    border-width:0px;
+    box-shadow: 5px 5px 15px 5px #8C734A; 
+    text-align:center;
+}
+
+.btn_Grilla_Historial
+{
+    width:24px;
+    height:24px;
+    text-align:center;
+    background-image:url('../Images/Barra_Herramientas/24/Historial.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+    border-width:0px;
+}
+
+.btn_Grilla_Historial:hover
+{
+    width:24px;
+    height:24px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+    border-width:0px;
+    box-shadow: 5px 5px 15px 5px #8C734A; 
+    text-align:center;
+}
+
+
+/*---------Botones Reportes----------*/
+.btn_Reporte
+{
+    float:left;
+    width:150px;
+    height:100px;
+    background-image:url('../Imagenes/Botones/Reporte.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+    border-width:0px;
+    border-radius: 5px;
+}
+
+.btn_Reporte:hover
+{
+    float:left;
+    width:150px;
+    height:100px;
+    Background-image:url('../Imagenes/Botones/Reporte.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+    border-width:0px;
+    box-shadow: 5px 5px 15px 5px #8C734A; 
+    border-radius: 5px;
+}
+
+/*---------Botones Pasajes Disponibles----------*/
+.btn_Pasajes_Disponibles
+{
+    background-image:url('../Images/Botones/Pasajes.png');
+    width:100px;
+    height:24px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+}
+
+.btn_Pasajes_Disponibles:hover
+{
+    Background-image:url('../Images/Botones/Pasajes.png');
+    width:100px;
+    height:24px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+}
+
+/*---------Botones Guardar----------*/
+.btn_Guardar_Viaje
+{
+    float:right;
+    clear:both;
+    background-image:url('../Images/Botones/Guardar.png');
+    width:100px;
+    height:24px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+    margin-bottom: 0;
+}
+
+.btn_Guardar_Viaje:hover
+{
+    Background-image:url('../Images/Botones/Guardar.png');
+    width:100px;
+    height:24px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-color:transparent;
+}
+
+
+
+/* ----------------- Etiquetas Div Formularios---------------------------*/
+
+.Panel
+{
+    width: 100%;
+}
+
+.Label
+{
+    width:12%;
+    float:left;
+    height:24px;
+    text-align:right;
+    padding-right:1%;
+    padding-left:1%;
+    padding-top:2px;
+    border: solid 0px #8C734A;
+    background-color:transparent;
+    font-size:11px;
+}
+
+.Control
+{
+    width:34%;
+    float:left;
+    height:24px;
+    padding-right:1%;
+    padding-left:1%;
+    padding-top:2px;
+    border: solid 0px #8C734A;
+    font-size:11px;
+    background-color:transparent;
+}
+.Label_1C
+{
+    width:26%;
+    float:left;
+    height:24px;
+    text-align:right;
+    padding-right:1%;
+    padding-left:1%;
+    padding-top:2px;
+    border: solid 0px #8C734A;
+    background-color:transparent;
+    font-size:11px;
+}
+
+.Control_1C
+{
+    width:70%;
+    float:left;
+    height:24px;
+    padding-right:1%;
+    padding-left:1%;
+    padding-top:2px;
+    border: solid 0px #8C734A;
+    font-size:11px;
+    background-color:transparent;
+}
+.Text:focus
+{
+    background-color:lightblue;
+}
+
+div.Comentario
+{  
+    float:left;
+    width:34%;
+    padding-right:1%;
+    padding-left:1%;
+    padding-top:2px;
+    border: solid 0px #8C734A;
+    height:76px;
+    font-size:11px;
+}
+
+div.OverFlow
+{
+    overflow: auto; 
+    min-height:50px;
+    max-height:300px;
+    width:100%;
+    border:0px solid silver;
+}
+
+.Botonera
+{
+    clear:both;
+    width:98%;
+    padding:10px;
+    text-align:center;
+    height:40px;
+    border:0px solid darkblue;
+}
+
+@font-face 
+{ 
+    font-family:  Codigos_de_Barras; 
+    src: url('http://10.100.150.161/Repositorio/fuentes/C39HrP24DhTt.ttf'); 
+}
+
+.Bloquea_fondo {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: url() center no-repeat transparent;
+    background-color:gray;
+    *filter: alpha(opacity=70);
+    opacity: 0.5;
+    position:fixed;
+    z-index:1;
+}
+
+/*grande*/
+.Panel_PopUp {    
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    overflow:auto;
+    position:fixed;
+    background: url() center no-repeat transparent;
+    background-color:white;
+    padding: 10px;
+    margin:10px;
+    border-radius:10px;
+    border: solid 14px black;    
+    box-shadow: 5px 5px 15px 5px #8C734A;
+    z-index:2;
+    /*DESENFOQUE*/
+    /*color:transparent;
+    text-shadow:0 0 10px #555; */
+ }
+
+
+/*mini- poca info*/
+.Panel_PopUp_Mini {    
+    top: 20%;
+    bottom: 20%;
+    left: 20%;
+    right: 20%;
+    overflow:auto;
+    position:fixed;
+    background: url() center no-repeat transparent;
+    background-color:white;
+    padding: 10px;
+    margin:10px;
+    border-radius:10px;
+    border: solid 14px black;    
+    box-shadow: 5px 5px 15px 5px #8C734A;
+    z-index:3;
+ }
+
+/*mediano*/
+.Panel_PopUp_Documento {
+    top: 80px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    overflow:auto;
+    position:fixed;
+    background: url() center no-repeat transparent;
+    background-color:white;
+    padding: 10px;
+    margin:10px;
+    border-radius:10px;
+    border: solid 14px black;
+    box-shadow: 5px 5px 15px 5px #8C734A;
+    z-index:2;
+    /*DESENFOQUE*/
+    /*color:transparent;
+    text-shadow:0 0 10px #555; */
+ }
+
+.Panel_PopUp_Mensaje {
+    top: 20%;
+    left: 20%;
+    right: 20%;
+    min-height:192px;
+    min-width:500px;
+    overflow:auto;
+    position:fixed;
+    background: url() center no-repeat transparent;
+    background-color:white;
+    padding: 10px;
+    margin:10px;
+    border-radius:10px;
+    border: solid 14px black;
+    box-shadow: 5px 5px 15px 5px #8C734A;
+    z-index:2;
+    /*DESENFOQUE
+    color:transparent;
+    text-shadow:0 0 10px #555; */
+ }
+
+.Panel_PopUp_Mini_Drag {
+    
+    width:300px;
+    height:200px;
+    overflow:auto;
+    /*position:fixed;*/
+    background: url() center no-repeat transparent;
+    background-color:white;
+    padding: 10px;
+    margin:10px;
+    border-radius:10px;
+    border: solid 14px black;    
+    box-shadow: 5px 5px 15px 5px #8C734A;
+    z-index:3;
+ }
+
+/*chico*/
+.Panel_PopUp_Adjuntos {
+    top: 150px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    position:fixed;
+    background: url() center no-repeat transparent;
+    background-color:white;
+    padding: 10px;
+    margin:10px;
+    border-radius:10px;
+    border: solid 14px black;    
+    box-shadow: 5px 5px 15px 5px #8C734A;
+    z-index:3;
+    
+    /* Animacion
+    -webkit-animation-delay:1s;
+    -webkit-transform:scale(1.1);
+    -webkit-animation-duration:1s;
+    */
+    /*DESENFOQUE*/
+    /*color:transparent;
+    text-shadow:0 0 10px #555; */
+ }
+
+/*SE APLICASOBRE EL DIV QUE ESTA DENTRO DEL PANEL*/
+.Cerrar {
+    Background-image:url('../Styles/images/Cerrar.png');
+    background-repeat:no-repeat;
+    border:none;
+    height:24px;
+    width:24px;
+    bottom:40px;
+    right:55px;
+    position:fixed;
+    z-index:1;
+    
+}
+.Cerrar:hover {
+    Background-image:url('../Styles/images/Cerrar_Over.png');
+    background-repeat:no-repeat;
+    height:24px;
+    width:24px;
+    bottom:40px;
+    right:55px;
+    position:fixed;
+    border: none;
+    z-index:1;
+}
+
+
+/*SE APLICASOBRE EL BOTON QUE ESTA DENTRO DEL PANEL*/
+.Cerrar_Mini {
+    Background-image:url('images/Cerrar.png');
+    background-repeat:no-repeat;
+    height:24px;
+    width:24px;
+    bottom:5px;
+    right:5px;
+    position:absolute;
+    z-index:1;
+    border: solid 0px transparent; 
+}
+.Cerrar_Mini:hover {
+    Background-image:url('../Styles/images/Cerrar_Over.png');
+    background-repeat:no-repeat;
+    height:24px;
+    width:24px;
+    bottom:5px;
+    right:5px;
+    position:absolute;
+    border: solid 0px transparent; 
+    z-index:1;
+}
+
+/*SE APLICASOBRE EL BOTON QUE ESTA DENTRO DEL PANEL*/
+.Cerrar_Drag {
+    Background-image:url('images/Cerrar.png');
+    background-repeat:no-repeat;
+    height:24px;
+    width:24px;
+    bottom:35px;
+    right:35px;
+    position:absolute;
+    z-index:1;
+    border: solid 0px transparent; 
+}
+.Cerrar_Drag:hover {
+    Background-image:url('../Styles/images/Cerrar_Over.png');
+    background-repeat:no-repeat;
+    height:24px;
+    width:24px;
+    bottom:35px;
+    right:35px;
+    position:absolute;
+    border: solid 0px transparent; 
+    z-index:1;
+}
+
+/*------ Tool tips-------*/
+a.tooltips {
+  position: relative;
+  display: inline;
+}
+
+a.tooltips span {
+        position: absolute;
+        width:300px;
+        color: #FFFFFF;
+        background: #000000;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        visibility: hidden;
+        border-radius: 3px;
+        background: -webkit-linear-gradient(top, #333333, #999999);
+        background: linear-gradient(top, #333333, #999999);
+}
+a.tooltips span:after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -100px;
+        width: 0; 
+        height: 0;
+        border-top: 8px solid #999999;
+        border-right: 8px solid transparent;
+        border-left: 8px solid transparent;
+}
+a:hover.tooltips span {
+        visibility: visible;
+        /*opacity: 0.8;*/       /*transparencia*/
+        bottom: 30px;
+        left: 50%;
+        margin-left: -80px;
+        z-index: 999;
+}
+
+/*Tool top hacia la derecha*/
+
+a.tooltipsI {
+  position: relative;
+  display: inline;
+}
+
+a.tooltipsI span {
+        position: absolute;
+        width:300px;
+        color: #FFFFFF;
+        background: #000000;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        visibility: hidden;
+        border-radius: 3px;
+        background: -webkit-linear-gradient(top, #333333, #999999);
+        background: linear-gradient(top, #333333, #999999);
+}
+a.tooltipsI span:after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: 90px; /*mueve la flecha de izq o der (+) derecha*/ 
+        width: 0; 
+        height: 0;
+        border-top: 8px solid #999999;
+        border-right: 8px solid transparent;
+        border-left: 8px solid transparent;
+}
+a:hover.tooltipsI span {
+        visibility: visible;
+        /*opacity: 0.8;*/       /*transparencia*/
+        bottom: 30px; /*Mueve el cuadro de comentario mas arriba o abajo  (+) arriba*/
+        left: -200%; /*mueve el recuadro del comentario de izq o der (+) derecha*/ 
+        /*margin-left: 30px;*/
+        z-index: 999;
+}
+
+/*TT centro*/
+
+
+a.tooltipsC {
+  position: relative;
+  display: inline;
+}
+
+a.tooltipsC span {
+        position: absolute;
+        width:300px;
+        color: #FFFFFF;
+        background: #000000;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        visibility: hidden;
+        border-radius: 3px;
+        background: -webkit-linear-gradient(top, #333333, #999999);
+        background: linear-gradient(top, #333333, #999999);
+}
+
+a:hover.tooltipsC span {
+        visibility: visible;
+        /*opacity: 0.8;*/       /*transparencia*/
+        bottom: 20px; /*Mueve el cuadro de comentario mas arriba o abajo  (+) arriba*/
+        left: -20%; /*mueve el recuadro del comentario de izq o der (+) derecha*/ 
+        /*margin-left: 30px;*/
+        z-index: 999;
+}
