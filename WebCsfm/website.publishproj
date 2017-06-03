@@ -19,7 +19,7 @@ Copyright (C) Microsoft Corporation. Todos los derechos reservados.
     <ProjectGuid>{27e486c2-3c37-4ff6-a869-f4d5df475714}</ProjectGuid>
     <SourceWebPhysicalPath>$(MSBuildThisFileDirectory)</SourceWebPhysicalPath>
     <SourceWebVirtualPath>/WebCsfm</SourceWebVirtualPath>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <SourceWebProject>
     </SourceWebProject>
     <SourceWebMetabasePath>

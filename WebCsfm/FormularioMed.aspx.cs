@@ -13,7 +13,8 @@ public partial class Pruebas : System.Web.UI.Page
     Service1Client wsCSFM = new Service1Client();
     static List<DetalleForm> listaDetalle = new List<DetalleForm>();
     static List<Medicamento> listaMedica = new List<Medicamento>();
-    Medicamento medica = new Medicamento();
+    static Medicamento medica = new Medicamento();
+    DetalleForm det = new DetalleForm();
 
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -89,15 +90,22 @@ public partial class Pruebas : System.Web.UI.Page
     protected void gvMedicamentos_SelectedIndexChanged(object sender, EventArgs e)
     {
         GridViewRow row = gvMedicamentos.SelectedRow;
-        
-        medica.Nombre = gvMedicamentos.Rows[gvMedicamentos.SelectedIndex].Cells[1].Text;
-        medica.Cantidad = int.Parse(gvMedicamentos.Rows[gvMedicamentos.SelectedIndex].Cells[2].Text);
-        medica.UnidadMedida = gvMedicamentos.Rows[gvMedicamentos.SelectedIndex].Cells[3].Text;
-        medica.Stock = int.Parse(gvMedicamentos.Rows[gvMedicamentos.SelectedIndex].Cells[4].Text);
+        txtCodigoMedicamento.Text = gvMedicamentos.Rows[gvMedicamentos.SelectedIndex].Cells[1].Text;
+        txtMedicamento.Text = gvMedicamentos.Rows[gvMedicamentos.SelectedIndex].Cells[2].Text;
+        txtUnidad.Text = gvMedicamentos.Rows[gvMedicamentos.SelectedIndex].Cells[3].Text;
+        txtUniMed.Text = gvMedicamentos.Rows[gvMedicamentos.SelectedIndex].Cells[4].Text;
 
-        listaMedica.Add(medica);
-        GridView1.DataSource = listaMedica;
-        GridView1.DataBind();
+        //medica = null;
+        
+        medica.idMedicamento = gvMedicamentos.Rows[gvMedicamentos.SelectedIndex].Cells[1].Text;
+        medica.Nombre = gvMedicamentos.Rows[gvMedicamentos.SelectedIndex].Cells[2].Text;
+        medica.Cantidad = int.Parse(gvMedicamentos.Rows[gvMedicamentos.SelectedIndex].Cells[3].Text);
+        medica.UnidadMedida = gvMedicamentos.Rows[gvMedicamentos.SelectedIndex].Cells[4].Text;
+        medica.Stock = int.Parse(gvMedicamentos.Rows[gvMedicamentos.SelectedIndex].Cells[5].Text);
+
+        //listaMedica.Add(medica);
+        //GridView1.DataSource = listaMedica;
+        //GridView1.DataBind();
 
         gvMedicamentos.DataSource = null;
         gvMedicamentos.DataBind();
@@ -105,8 +113,7 @@ public partial class Pruebas : System.Web.UI.Page
         pnlBloqueo.Visible = false;
         Pnl_pop_up.Visible = false;
     }
-
-   protected void GridView1RowCommand(Object sender, GridViewCommandEventArgs e)
+    protected void gvDetalleRowCommand(Object sender, GridViewCommandEventArgs e)
     {
         try
         {
@@ -114,8 +121,8 @@ public partial class Pruebas : System.Web.UI.Page
             {
                 int index = Convert.ToInt32(e.CommandArgument);
                 listaMedica.RemoveAt(index);
-                GridView1.DataSource = listaMedica;
-                GridView1.DataBind();
+                gvDetalle.DataSource = listaMedica;
+                gvDetalle.DataBind();
             }
         }
         catch (Exception)
@@ -124,7 +131,7 @@ public partial class Pruebas : System.Web.UI.Page
             throw;
         }
     }
-
+  
     protected void lbtOk_Click(object sender, EventArgs e)
     {
         if (listaMedica.Count == 0)
@@ -134,6 +141,55 @@ public partial class Pruebas : System.Web.UI.Page
         else
         {
             //ingresar codigo para grabar en las tablas correspondientes
+        }
+    }
+
+    protected void lbtnAgregar_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            int agregar = 0;
+            if (txtPrescripcion.Text == null || txtPrescripcion.Text == "")
+            {
+                ClientScript.RegisterStartupScript(Page.GetType(), "Message", "alert('" + "debe ingresar la prescripcion" + "');", true);
+            }
+            else
+            {
+
+                medica.Prescripcion = txtPrescripcion.Text;
+
+                foreach (var item in listaMedica)
+                {
+                    if (item.idMedicamento == medica.idMedicamento)
+                    {
+                        agregar = 1;
+                    }
+                }
+
+                if (agregar == 0)
+                {
+                    listaMedica.Add(medica);
+                }
+                else
+                {
+                    ClientScript.RegisterStartupScript(Page.GetType(), "Message", "alert('" + "Medicamento ya fue ingresado al formulario" + "');", true);
+                }
+                txtCodigoMedicamento.Text = string.Empty;
+                txtMedicamento.Text = string.Empty;
+                txtUnidad.Text = string.Empty;
+                txtUniMed.Text = string.Empty;
+                txtPrescripcion.Text = string.Empty;
+
+            }
+
+
+            gvDetalle.DataSource = listaMedica;
+            gvDetalle.DataBind();
+        }
+        catch (Exception)
+        {
+
+            throw;
         }
     }
 }

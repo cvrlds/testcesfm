@@ -9,3 +9,14 @@ C:\Users\claudio\Source\Repos\Team-Web-CESFAM\Test\bin\Debug\Newtonsoft.Json.dll
 C:\Users\claudio\Source\Repos\Team-Web-CESFAM\Test\bin\Debug\Newtonsoft.Json.xml
 C:\Users\claudio\Source\Repos\Team-Web-CESFAM\Test\bin\Debug\AjaxControlToolkit.dll
 C:\Users\claudio\Source\Repos\Team-Web-CESFAM\Test\bin\Debug\Web.Ajax.dll
+E:\descargas\WEBCesfam-20170531T001145Z-001\WEBCesfam\Test\bin\Debug\Test.exe.config
+E:\descargas\WEBCesfam-20170531T001145Z-001\WEBCesfam\Test\bin\Debug\Test.exe
+E:\descargas\WEBCesfam-20170531T001145Z-001\WEBCesfam\Test\bin\Debug\Test.pdb
+E:\descargas\WEBCesfam-20170531T001145Z-001\WEBCesfam\Test\bin\Debug\AjaxControlToolkit.dll
+E:\descargas\WEBCesfam-20170531T001145Z-001\WEBCesfam\Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+E:\descargas\WEBCesfam-20170531T001145Z-001\WEBCesfam\Test\bin\Debug\Newtonsoft.Json.dll
+E:\descargas\WEBCesfam-20170531T001145Z-001\WEBCesfam\Test\bin\Debug\Web.Ajax.dll
+E:\descargas\WEBCesfam-20170531T001145Z-001\WEBCesfam\Test\bin\Debug\Newtonsoft.Json.xml
+E:\descargas\WEBCesfam-20170531T001145Z-001\WEBCesfam\Test\bin\Debug\es\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+E:\descargas\WEBCesfam-20170531T001145Z-001\WEBCesfam\Test\obj\Debug\Test.exe
+E:\descargas\WEBCesfam-20170531T001145Z-001\WEBCesfam\Test\obj\Debug\Test.pdb

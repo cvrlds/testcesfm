@@ -15,6 +15,8 @@ namespace Negocio
         public int Stock { get; set; }
         public int StockCritico { get; set; }
 
+        public string Prescripcion { get; set; }
+
         public Medicamento()
         {
             this.Init();
@@ -27,6 +29,7 @@ namespace Negocio
             this.UnidadMedida = string.Empty;
             this.Stock = 0;
             this.StockCritico = 0;
+            this.Prescripcion = string.Empty;
         }
     }
 }

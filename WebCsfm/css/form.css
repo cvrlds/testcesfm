@@ -113,3 +113,27 @@ td{
     color: steelblue;
     font-weight: 600;
 }
+
+#pnlMedi1, #pnlMedi2, #pnlMedi3{
+    margin-top: 2em;
+    width: 80%;
+    text-align: center;
+}
+
+#lbCMed, #lbMed, #lbUnidad, #lbUnidadMedida, #lbPrescripcion{
+    color: ghostwhite;
+    font-weight: 600;
+}
+
+#tx, #lbtnAgregar{
+    color: ghostwhite;
+    font-weight: 600;
+}
+
+#LinkButton1{
+    background-color: #297AFF;
+}
+
+#buscarM{
+    margin-top: 3em;
+}

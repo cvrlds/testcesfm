@@ -1,0 +1,12 @@
+﻿body {
+    background-image: url(../recursos/imagenes/fondo_doctor.jpg);
+    background-size:cover;
+}
+
+fieldset{
+  border: 1px solid;  
+}
+
+.fieldst{
+    margin-top: auto;
+}

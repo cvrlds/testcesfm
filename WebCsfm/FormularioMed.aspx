@@ -3,6 +3,8 @@
 
 <!DOCTYPE html>
 
+
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
     <title>Cesfam - Busqueda</title>
@@ -63,27 +65,46 @@
         </div>
 
         <center>
-            <div class="input-group">
+            <div id="buscarM" class="input-group">
                 <asp:LinkButton ID="LinkButton1" runat="server" CssClass="btn btn-info btn-sm" OnClick="lbtnBuscar1_Click"><span class="glyphicon glyphicon-search"></span></asp:LinkButton>
                 <span class="lblbusca">Buscar Medicamento</span>
             </div>
             <br />
-            <asp:GridView ID="GridView1" CssClass="table table-hover" runat="server" AutoGenerateColumns="False" OnRowCommand="GridView1RowCommand">
-                <Columns>
+            <div id="pnlMedi1" class="input-group">
+                <span id="lbCMed" class="label-info input-group-addon">Cod. Medicamento</span>
+                <asp:TextBox type="text" class="form-control" id="txtCodigoMedicamento" disabled runat="server"></asp:TextBox>
+                <span id="lbMed" class="label-info input-group-addon">Medicamento</span>
+                <asp:TextBox type="text" class="form-control" id="txtMedicamento" disabled runat="server"></asp:TextBox>
+                <span id="lbUnidad" class="label-info input-group-addon">Unidad</span>
+                <asp:TextBox type="text" class="form-control" id="txtUnidad" disabled runat="server"></asp:TextBox>
+                
+            </div>
+            <div id="pnlMedi2" class="input-group">
+                <span id="lbUnidadMedida" class="label-info input-group-addon">Unidad de Medida</span>
+                <asp:TextBox type="text" class="form-control" id="txtUniMed" disabled runat="server"></asp:TextBox>
+                <span id="lbPrescripcion" class="label-info input-group-addon">Prescripción</span>
+                <asp:TextBox type="text" class="form-control" id="txtPrescripcion" runat="server"></asp:TextBox>
+            </div>
+            <div id="pnlMedi3" class="input-group">
+                <asp:LinkButton ID="lbtnAgregar" runat="server" CssClass="btn btn-success btn-md" Text="Agregar" OnClick="lbtnAgregar_Click" >
+                    <span class="glyphicon glyphicon-check"></span>&nbsp;Agregar</asp:LinkButton>
+            
+            </div>
+            <br />
+            <br />
+            
+        <asp:GridView ID="gvDetalle" runat="server" CssClass="table table-hover" AutoGenerateColumns="False" OnRowCommand="gvDetalleRowCommand">
+            <Columns>
+                    <asp:BoundField DataField="idMedicamento" HeaderText="Código" />
                     <asp:BoundField DataField="Nombre" HeaderText="Nombre" />
                     <asp:BoundField DataField="Cantidad" HeaderText="Unidad" />
                     <asp:BoundField DataField="UnidadMedida" HeaderText="Medida" />
-                    <asp:TemplateField HeaderText="Prescripción">
-                        <ItemTemplate>
-                            <asp:TextBox ID="TextBox1" runat="server" Text=""></asp:TextBox>
-                        </ItemTemplate>
-                    </asp:TemplateField>
-                    <asp:ButtonField ButtonType="Button" ControlStyle-CssClass="btn btn-xs btn-danger" CommandName="Delete" Text="Eliminar" 
-                        HeaderText="Opciones" >
+                    <asp:BoundField DataField="Prescripcion" HeaderText="Prescripcion" />
+                    <asp:ButtonField CommandName="Eliminar" ButtonType="Button" ControlStyle-CssClass="btn btn-xs btn-danger"  Text="Eliminar" >
+                         <ControlStyle CssClass="btn btn-xs btn-danger"></ControlStyle>
                     </asp:ButtonField>
-                </Columns>
-            </asp:GridView>
-        
+            </Columns>
+        </asp:GridView>
             
         <br />
         <div id="check">
@@ -107,9 +128,11 @@
                 <asp:GridView ID="gvMedicamentos" CssClass="table" runat="server"  
                     OnSelectedIndexChanged="gvMedicamentos_SelectedIndexChanged" AutoGenerateColumns="False">
                     <Columns>
+                        
                         <asp:CommandField ShowSelectButton="True" ControlStyle-CssClass="btn btn-xs btn-success">
                         <ControlStyle CssClass="btn btn-xs btn-success" />
                         </asp:CommandField>
+                        <asp:BoundField DataField="Id_Medicamento" HeaderText="Id Medicamento" />
                         <asp:BoundField DataField="Nombre" HeaderText="Nombre" />
                         <asp:BoundField DataField="Cant_Um" HeaderText="Unidad" />
                         <asp:BoundField DataField="nombre_unidad" HeaderText="Medida" />

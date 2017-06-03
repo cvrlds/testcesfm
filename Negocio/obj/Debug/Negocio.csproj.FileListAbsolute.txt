@@ -27,3 +27,14 @@ E:\Proyecyos\Team-Web-CESFAM-Cesfam\Team-Web-CESFAM-Cesfam\Negocio\bin\Debug\Neg
 E:\Proyecyos\Team-Web-CESFAM-Cesfam\Team-Web-CESFAM-Cesfam\Negocio\bin\Debug\Negocio.pdb
 E:\Proyecyos\Team-Web-CESFAM-Cesfam\Team-Web-CESFAM-Cesfam\Negocio\obj\Debug\Negocio.dll
 E:\Proyecyos\Team-Web-CESFAM-Cesfam\Team-Web-CESFAM-Cesfam\Negocio\obj\Debug\Negocio.pdb
+C:\WEBCesfam\Negocio\bin\Debug\Negocio.dll.config
+C:\WEBCesfam\Negocio\bin\Debug\Negocio.dll
+C:\WEBCesfam\Negocio\bin\Debug\Negocio.pdb
+C:\WEBCesfam\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\WEBCesfam\Negocio\obj\Debug\Negocio.dll
+C:\WEBCesfam\Negocio\obj\Debug\Negocio.pdb
+E:\descargas\WEBCesfam-20170531T001145Z-001\WEBCesfam\Negocio\bin\Debug\Negocio.dll.config
+E:\descargas\WEBCesfam-20170531T001145Z-001\WEBCesfam\Negocio\bin\Debug\Negocio.dll
+E:\descargas\WEBCesfam-20170531T001145Z-001\WEBCesfam\Negocio\bin\Debug\Negocio.pdb
+E:\descargas\WEBCesfam-20170531T001145Z-001\WEBCesfam\Negocio\obj\Debug\Negocio.dll
+E:\descargas\WEBCesfam-20170531T001145Z-001\WEBCesfam\Negocio\obj\Debug\Negocio.pdb

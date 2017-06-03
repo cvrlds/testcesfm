@@ -10,7 +10,7 @@ using Negocio;
 
 public partial class Login : System.Web.UI.Page
 {
-    Service1Client wsCSFM = new Service1Client();
+   Service1Client wsCSFM = new Service1Client();
 
     protected void Page_Load(object sender, EventArgs e)
     {
