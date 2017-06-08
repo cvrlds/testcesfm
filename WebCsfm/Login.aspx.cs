@@ -62,7 +62,9 @@ public partial class Login : System.Web.UI.Page
         }
         catch (ArgumentNullException ex)
         {
-            throw new ArgumentNullException("Por favor contacte al Administrador del Sistema!", ex);
+            ClientScript.RegisterStartupScript(Page.GetType(), "Message", "alert('" + "Su contraseña es Incorrecta, favor intentar nuevamente." + "');", true);
+            Session.Abandon();
+            Server.Transfer("./Login.aspx", true);
         }
       }
 }

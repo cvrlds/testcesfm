@@ -20,3 +20,15 @@ E:\descargas\WEBCesfam-20170531T001145Z-001\WEBCesfam\Test\bin\Debug\Newtonsoft.
 E:\descargas\WEBCesfam-20170531T001145Z-001\WEBCesfam\Test\bin\Debug\es\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
 E:\descargas\WEBCesfam-20170531T001145Z-001\WEBCesfam\Test\obj\Debug\Test.exe
 E:\descargas\WEBCesfam-20170531T001145Z-001\WEBCesfam\Test\obj\Debug\Test.pdb
+E:\Respaldo Portafolio\WEBCesfam\Test\bin\Debug\Test.exe.config
+E:\Respaldo Portafolio\WEBCesfam\Test\bin\Debug\Test.exe
+E:\Respaldo Portafolio\WEBCesfam\Test\bin\Debug\Test.pdb
+E:\Respaldo Portafolio\WEBCesfam\Test\bin\Debug\AjaxControlToolkit.dll
+E:\Respaldo Portafolio\WEBCesfam\Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+E:\Respaldo Portafolio\WEBCesfam\Test\bin\Debug\Newtonsoft.Json.dll
+E:\Respaldo Portafolio\WEBCesfam\Test\bin\Debug\Web.Ajax.dll
+E:\Respaldo Portafolio\WEBCesfam\Test\bin\Debug\Newtonsoft.Json.xml
+E:\Respaldo Portafolio\WEBCesfam\Test\bin\Debug\es\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+E:\Respaldo Portafolio\WEBCesfam\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+E:\Respaldo Portafolio\WEBCesfam\Test\obj\Debug\Test.exe
+E:\Respaldo Portafolio\WEBCesfam\Test\obj\Debug\Test.pdb

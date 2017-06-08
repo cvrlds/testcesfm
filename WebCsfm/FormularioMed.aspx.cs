@@ -11,10 +11,10 @@ using Newtonsoft.Json;
 public partial class Pruebas : System.Web.UI.Page
 {
     Service1Client wsCSFM = new Service1Client();
-    static List<DetalleForm> listaDetalle = new List<DetalleForm>();
     static List<Medicamento> listaMedica = new List<Medicamento>();
     static Medicamento medica = new Medicamento();
-    DetalleForm det = new DetalleForm();
+
+
 
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -24,7 +24,7 @@ public partial class Pruebas : System.Web.UI.Page
 
             if (Session["nombMed"].ToString().Equals(" "))
             {
-                Session.RemoveAll();
+                Session.Abandon();
                 Server.Transfer("./Login.aspx", true);
             }
             string ssNomb = Session["nombMed"].ToString() + " " + Session["apPatMed"].ToString();
@@ -36,10 +36,13 @@ public partial class Pruebas : System.Web.UI.Page
             pnlBloqueo.CssClass = "Bloquea_fondo";
             Pnl_pop_up.CssClass = "Panel_PopUp_Documento";
 
+
         }
         catch (NullReferenceException ne)
         {
-            throw new NullReferenceException("Error: ", ne); 
+            Console.Out.WriteLine("Error: " + ne);
+            Session.Abandon();
+            Server.Transfer("./Login.aspx", true);
         }
     }
 
@@ -49,12 +52,14 @@ public partial class Pruebas : System.Web.UI.Page
     {
         try
         {
-            Session.RemoveAll();
-            Response.Redirect("./Login.aspx");
+            Session.Abandon();
+            Server.Transfer("./Login.aspx", true);
         }
         catch (ArgumentNullException arg)
         {
-            throw new ArgumentNullException("Favor contactar al Administrador del Sistema!", arg);
+            Console.Out.WriteLine("Error: " + arg);
+            Session.Abandon();
+            Server.Transfer("./Login.aspx", true);
         }
     }
 
@@ -86,7 +91,7 @@ public partial class Pruebas : System.Web.UI.Page
     }
 
     int RowIndex;
-    
+
     protected void gvMedicamentos_SelectedIndexChanged(object sender, EventArgs e)
     {
         GridViewRow row = gvMedicamentos.SelectedRow;
@@ -95,17 +100,15 @@ public partial class Pruebas : System.Web.UI.Page
         txtUnidad.Text = gvMedicamentos.Rows[gvMedicamentos.SelectedIndex].Cells[3].Text;
         txtUniMed.Text = gvMedicamentos.Rows[gvMedicamentos.SelectedIndex].Cells[4].Text;
 
-        //medica = null;
-        
+
+
         medica.idMedicamento = gvMedicamentos.Rows[gvMedicamentos.SelectedIndex].Cells[1].Text;
         medica.Nombre = gvMedicamentos.Rows[gvMedicamentos.SelectedIndex].Cells[2].Text;
         medica.Cantidad = int.Parse(gvMedicamentos.Rows[gvMedicamentos.SelectedIndex].Cells[3].Text);
         medica.UnidadMedida = gvMedicamentos.Rows[gvMedicamentos.SelectedIndex].Cells[4].Text;
         medica.Stock = int.Parse(gvMedicamentos.Rows[gvMedicamentos.SelectedIndex].Cells[5].Text);
 
-        //listaMedica.Add(medica);
-        //GridView1.DataSource = listaMedica;
-        //GridView1.DataBind();
+
 
         gvMedicamentos.DataSource = null;
         gvMedicamentos.DataBind();
@@ -117,7 +120,7 @@ public partial class Pruebas : System.Web.UI.Page
     {
         try
         {
-            if (e.CommandName == "Delete")
+            if (e.CommandName == "Eliminar")
             {
                 int index = Convert.ToInt32(e.CommandArgument);
                 listaMedica.RemoveAt(index);
@@ -131,17 +134,43 @@ public partial class Pruebas : System.Web.UI.Page
             throw;
         }
     }
-  
+
     protected void lbtOk_Click(object sender, EventArgs e)
     {
-        if (listaMedica.Count == 0)
+        try
         {
-            ClientScript.RegisterStartupScript(Page.GetType(), "Message", "alert('" + "Debe Ingresar un al menos un Medicamento." + "');", true);
+            if (listaMedica.Count == 0)
+            {
+                ClientScript.RegisterStartupScript(Page.GetType(), "Message", "alert('" + "Debe Ingresar un al menos un Medicamento." + "');", true);
+            }
+            else
+            {
+                Service1Client WCF = new Service1Client();
+                string rutMedico = Session["rutMed"].ToString();
+                string rutPaciente = Session["rutPac"].ToString();
+                string tipoTratamiento = lblTratam.SelectedValue.ToString();
+                string fecha = txtFecha.Text;
+                string eval = "";
+
+                WCF.InsFormMedicamentos(fecha, tipoTratamiento, rutPaciente, rutMedico, eval);
+
+                int idForm = int.Parse(WCF.getId_FormMax());
+
+                foreach (var item in listaMedica)
+                {
+
+                    WCF.InsDetForm(idForm, item.idMedicamento, item.Prescripcion);
+                }
+
+                Response.Redirect("./Busqueda.aspx");
+            }
         }
-        else
+        catch (Exception)
         {
-            //ingresar codigo para grabar en las tablas correspondientes
+
+            throw;
         }
+
     }
 
     protected void lbtnAgregar_Click(object sender, EventArgs e)

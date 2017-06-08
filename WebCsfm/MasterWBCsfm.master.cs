@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 using WSCESFM;
 using Negocio;
 using Newtonsoft.Json;
-
+using System.Web.Services.Description;
 
 public partial class MasterWBCsfm : System.Web.UI.MasterPage
 {
@@ -29,23 +29,18 @@ public partial class MasterWBCsfm : System.Web.UI.MasterPage
         }
         catch (NullReferenceException ae)
         {
-            throw new NullReferenceException("Error: ", ae);
+            Console.Out.WriteLine("Error: " + ae);
+            Session.Abandon();
+            Server.Transfer("./Login.aspx", true);
         }
 
     }
 
     protected void salir_Click(object sender, EventArgs e)
     {
-        try
-        {
-            Session.RemoveAll();
+            Session.Abandon();
             Server.Transfer("./Login.aspx", true);
-        }
-        catch (NullReferenceException nre)
-        {
-
-            throw new NullReferenceException("Favor contactar al Aministrador del Sistema!", nre);
-        }
+        
     }
 
 }

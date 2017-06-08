@@ -36,7 +36,7 @@
                 <div class="mbr-table-cell">
 
                     <div class="navbar-brand">
-                        <span class="navbar-logo"><img src="assets/images/logo-cesfam-128x128.jpg" alt="Cesfam"></span>
+                        <span class="navbar-logo"><img src="assets/images/logo-cesfam-128x128.jpg" alt="Cesfam" /></span>
                         <a class="navbar-caption">CESFAM</a>
                     </div>
 
@@ -51,16 +51,15 @@
                     <button hidden="" class="navbar-toggler navbar-close" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
                         <div class="close-icon"></div>
                     </button>
-
                 </div>
             </div>
-
         </div>
     </nav>
 
 </section>
 
-<section class="engine"><a rel="external"></a></section><section class="mbr-section mbr-section-hero mbr-section-full mbr-after-navbar" id="header4-2" data-bg-video="https://www.youtube.com/embed/0DQfcrOQGDU?rel=0&amp;amp;showinfo=0&amp;autoplay=0&amp;loop=0">
+<section class="engine"><a rel="external"></a></section><section class="mbr-section mbr-section-hero mbr-section-full mbr-after-navbar" id="header4-2" 
+    data-bg-video="https://www.youtube.com/embed/0DQfcrOQGDU?rel=0&amp;amp;showinfo=0&amp;autoplay=0&amp;loop=0">
 
     <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(0, 0, 0);"></div>
 
@@ -70,32 +69,28 @@
             <div class="row">
                 <div class="mbr-section col-md-10 col-md-offset-1 text-xs-center">
                     <h1 class="mbr-section-title display-1"><span style="font-weight: normal;">Web CESFAM</span></h1>
-                    <p class="mbr-section-lead lead"><br><span style="font-style: normal;">...Con tu ayuda, siempre habra un paciente feliz</span></p>
+                    <p class="mbr-section-lead lead"><br><span style="font-style: normal;">...Con tu ayuda, siempre habra una persona feliz</span></p>
                 </div>
             </div>
         </div>
     </div>
-    <form id="form1" runat="server" method="post">
+    <div class="pLogin">
+        <form id="form1" runat="server" method="post">
         <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
         <asp:ModalPopupExtender ID="ModalPopupExtender1" runat="server" TargetControlID="btnLogin" PopupControlID="pnlLogin"></asp:ModalPopupExtender>
         <asp:Panel id="pnlLogin" runat="server">
             <fieldset>
                 <div class="input-group">
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                     <asp:TextBox ID="user" type="text" class="form-control" name="user" placeholder="Usuario" runat="server" ToolTip="Usuario"></asp:TextBox>
+                    &nbsp;&nbsp;
+                    <asp:TextBox ID="password" type="password" class="fc1 form-control" name="password" placeholder="Clave" runat="server" ToolTip="Clave"></asp:TextBox>
+                    &nbsp;&nbsp;
+                    <asp:Button class="btn btn-success btn-xs" runat="server" Text="Ingresar" ID="btnIngresar" OnClick="btnIngresar_Click" />
                 </div>
-                <div>
-                    <asp:Label ID="test" runat="server"></asp:Label></div>
-                <div class="input-group">
-                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                    <asp:TextBox ID="password" type="password" class="form-control" name="password" placeholder="Clave" runat="server" ToolTip="Clave"></asp:TextBox>
-                </div>
-                <br />
-                <asp:Button class="btn btn-success" runat="server" Text="Ingresar" ID="btnIngresar" OnClick="btnIngresar_Click" />
             </fieldset>
         </asp:Panel>
     </form>
-
+    </div>
 </section>
 
 <footer class="mbr-small-footer mbr-section mbr-section-nopadding" id="footer1-2" style="background-color: rgb(50, 50, 50); padding-top: 1.75rem; padding-bottom: 1.75rem;">

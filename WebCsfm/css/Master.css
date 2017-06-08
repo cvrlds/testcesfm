@@ -1,59 +1,12 @@
 ﻿header {
+
 }
 
-.navbar{
-    background-color: steelblue;
+
+
+.btnS{
+    margin-top: 7px;
 }
 
-h2{
-    text-align: center;
-    color: whitesmoke;
-}
 
-img{
-    width: 50px;
-    border-radius: 20px;
-}
 
-.bread{
-    padding-left: 1em;
-    font-weight: bolder;
-    color: seagreen;
-}
-
-#titulo{
-    text-align: center;
-    font-family: Tahoma;
-    font-size: 24px;
-    font-weight: 800;
-    margin-top: 1.5em;
-}
-
-#lbSalida{
-   position: absolute;
-   right: 0;
-   padding-right: 2em;
-   color: red;
-   font-weight: 900;
-   text-decoration:underline;
-}
-
-#btnSalir{
-    color: red;
-    border: 0px;
-    background: unset;
-    font-family: Tahoma;
-    font-weight: 600;
-    font-size: 15px;
-}
-
-#txtRut{
-    border: 1px solid;
-}
-
-#lblBienv{
-   position: absolute;
-   right: 0;
-   padding-right: 7em;
-   margin-bottom: 1em;
-}

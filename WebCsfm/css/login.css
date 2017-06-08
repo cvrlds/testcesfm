@@ -3,22 +3,32 @@
 
 
 fieldset{
-    margin: 0 auto;
+    margin-top: -10em;
 }
 
 #pnlLogin{
-    border: 1px solid;
-    padding-left: 3em;
-    padding-right: 3em;
-    padding-bottom: 2.5em;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 40px;
+    width: auto;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.form-control{
+    width: 150px !important;
 }
 
 .input-group {
-    margin-top: 3em;
+    margin-top: 1.5em;
 }
 
-button{
-    margin-top: 2em;
+.btn{
+    margin-top: 0.2em;
+    margin-right: 1.5em
 }
+
+img{
+    border-radius: 10px !important;
+}
+

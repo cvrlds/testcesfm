@@ -21,12 +21,14 @@ public partial class _Default : System.Web.UI.Page
             if (Session["nombMed"].ToString().Equals(" "))
             {
                 Session.Abandon();
-                Response.Redirect("./Login.aspx");
+                Server.Transfer("./Login.aspx", true);
             }
         }
         catch (NullReferenceException ae)
         {
-            throw new NullReferenceException("Error: ", ae);
+            Console.Out.WriteLine("Error: " + ae);
+            Session.Abandon();
+            Server.Transfer("./Login.aspx", true);
         }
     }
 
@@ -71,18 +73,19 @@ public partial class _Default : System.Web.UI.Page
         }
         catch (ArgumentNullException ex)
         {
-            throw new ArgumentNullException("Por favor contacte al Equipo Informatico. ", ex);
+            Console.Out.WriteLine("Error: " + ex);
+            Session.Abandon();
+            Server.Transfer("./Login.aspx", true);
         }
 
     }
 
     protected void btnForm_Click(object sender, EventArgs e)
     {
+        string val = txtNombre.Text;
         try
         {
-            string ssRut = Session["rutPac"].ToString();
-
-            if (ssRut == " ")
+            if (string.IsNullOrEmpty(val))
             {
                 ClientScript.RegisterStartupScript(Page.GetType(), "Message", "alert('" + "Favor ingrese un Paciente." + "');", true);
             }
@@ -94,6 +97,7 @@ public partial class _Default : System.Web.UI.Page
         }
         catch (NullReferenceException ex)
         {
+            Server.Transfer("./Busqueda.aspx", true);
         }
     }
 }

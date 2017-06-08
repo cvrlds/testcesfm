@@ -1,0 +1,12 @@
+﻿body {
+    background-image: url(../recursos/imagenes/fndBusqueda.jpg);
+}
+
+fieldset{
+    width: 350px;
+    position: relative;
+}
+
+.titulo{
+    color: ghostwhite;
+}

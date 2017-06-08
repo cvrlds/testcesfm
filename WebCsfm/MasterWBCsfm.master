@@ -10,37 +10,55 @@
     </asp:ContentPlaceHolder>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="css/master.css" rel="stylesheet"/>
-    <link href="css/general.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
+    <link href="css/Master.css" rel="stylesheet"/>
     <script>
     </script>
 </head>
-<body>
-    <div class="navbar">
-        <div class="container">
-            <h2><img src="recursos/imagenes/logo_cesfam.jpg"/> CESFAM - Santiago Centro</h2>
+<body class="skin-blue layout-top-nav">
+  <header class="main-header">
+    <nav class="navbar navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand"><b>WEB</b>Cesfam</a>
         </div>
-    </div>
+        <div class="navbar-custom-menu">
+          <ul class="nav navbar-nav">
+            <li class="dropdown user user-menu">
+              <!-- Menu Toggle Button -->
+              <a class="dropdown-toggle" data-toggle="dropdown">
+                <!-- The user image in the navbar-->
+                <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image" />
+                <!-- hidden-xs hides the username on small devices so only the image appears. -->
+                <span class="hidden-xs">
+                    <asp:Label id="lblBienv" runat="server" Font-Bold="True" Font-Names="Tahoma" ForeColor="white"></asp:Label>
+                </span>
+              </a>
+            </li>
+          </ul>
+             <div class=" btnS input-group">
+                  <button type="button" class="btn btn-info pull-right" runat="server" onserverclick="salir_Click">
+                    <span>
+                      <i class="glyphicon glyphicon-log-out"></i> Salir
+                    </span>
+                  </button>
+                </div>
+        </div>
+        <!-- /.navbar-custom-menu -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+  </header>
+
     <form id="form1" runat="server">
-        
-    <div class="bread">
-        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="true"/>
-        <asp:SiteMapPath ID="SiteMapPath1" runat="server" Font-Names="Verdana" Font-Size="0.8em" PathSeparator=" : ">
-            <CurrentNodeStyle ForeColor="#333333" />
-            <NodeStyle Font-Bold="True" ForeColor="#990000" />
-            <PathSeparatorStyle Font-Bold="True" ForeColor="#990000" />
-            <RootNodeStyle Font-Bold="True" ForeColor="#FF8000" />
-        </asp:SiteMapPath>
-        <asp:Label ID="lblBienv" runat="server" Font-Bold="True" Font-Names="Tahoma" ForeColor="Blue" ToolTip="Hola!">Bienvenido </asp:Label>
-        <asp:Panel ID="lbSalida" runat="server">
-            <span class="glyphicon glyphicon-log-out"><input id="btnSalir" type="button" runat="server" value="Salir" onserverclick="salir_Click"/></span>
-        </asp:Panel>
-    </div>
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
     </form>
-    
+   
 </body>
 </html>

@@ -38,3 +38,8 @@ E:\descargas\WEBCesfam-20170531T001145Z-001\WEBCesfam\Negocio\bin\Debug\Negocio.
 E:\descargas\WEBCesfam-20170531T001145Z-001\WEBCesfam\Negocio\bin\Debug\Negocio.pdb
 E:\descargas\WEBCesfam-20170531T001145Z-001\WEBCesfam\Negocio\obj\Debug\Negocio.dll
 E:\descargas\WEBCesfam-20170531T001145Z-001\WEBCesfam\Negocio\obj\Debug\Negocio.pdb
+E:\Respaldo Portafolio\WEBCesfam\Negocio\bin\Debug\Negocio.dll.config
+E:\Respaldo Portafolio\WEBCesfam\Negocio\bin\Debug\Negocio.dll
+E:\Respaldo Portafolio\WEBCesfam\Negocio\bin\Debug\Negocio.pdb
+E:\Respaldo Portafolio\WEBCesfam\Negocio\obj\Debug\Negocio.dll
+E:\Respaldo Portafolio\WEBCesfam\Negocio\obj\Debug\Negocio.pdb
